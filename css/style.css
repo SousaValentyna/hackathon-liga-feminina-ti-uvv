@@ -54,6 +54,8 @@ table {
     --cor-sombra: #F5F5F5;
     --cor-font-primaria: #213343;
     --cor-btn: #9B5DE5;
+    --cor-footer: #44196F;
+    --cor-footer2: #261b3b;
 }
 
 .html, body {
@@ -409,6 +411,68 @@ table {
     background: url(/assets/img/send-email.png) 00 no-repeat;
     height: 34px;
     width: 34px;
+}
+
+.fundo-footer {
+    background-color: var(--cor-footer);
+}
+
+.fundo-footer .center {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer-contact {
+    width: 40%;
+    display: grid;
+    gap: 25px;
+    padding: 100px 0;
+}
+
+.footer-box {
+    width: 60%;
+}
+
+.div-nav-footer li {
+    padding-top: 15px;
+}
+
+.nav-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0;
+}
+
+.nav-link-title {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 30px 0;
+}
+
+.nav-link2 {
+    color:  #fff;
+    padding-top: 20px;
+    text-decoration: none;
+}
+
+.texto-footer {
+    color: #fff;
+}
+
+.fundo-footer-dev {
+    background-color: var(--cor-footer2);
+}
+
+.dev span {
+    color: #F5F5F5;
+    font-size: 14px;
+}
+
+.dev {
+    padding: 24px 0;
 }
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
