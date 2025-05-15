@@ -141,3 +141,22 @@
 .custom-nav {
   filter: brightness(0) saturate(100%) invert(85%) sepia(21%) saturate(1082%) hue-rotate(34deg) brightness(101%) contrast(94%);
 }
+
+.card-post {
+  width: 250px;               /* Largura fixa */
+  display: flex;
+  flex-direction: column;     /* Empilha a imagem e o texto na vertical */
+  align-items: center;
+  text-align: center;
+}
+
+.card-post img {
+  width: 300px;
+  width: 100%;                /* Imagem se ajusta à largura da div */
+  height: auto;               /* Mantém proporção */
+}
+
+.card-post a {
+  word-wrap: break-word;      /* Quebra palavras longas */
+  overflow-wrap: break-word;  /* Compatibilidade adicional */
+}

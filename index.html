@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme="bg-light">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top bg-white shadow-sm" data-bs-theme="bg-light">
         <div class="container d-flex align-items-center">
             <a class="navbar-brand d-flex align-items-center gap-2" href="#">
                 <img src="/assets/img/logo.png" alt="Logo" width="40" height="50" class="d-inline-block align-text-top">
@@ -34,30 +34,30 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-center w-100">
                     <li class="nav-item mx-2">
-                        <a class="nav-link active" aria-current="page" href="#">Sobre nós</a>
+                        <a class="nav-link active fw-semibold" aria-current="page" href="#">Sobre nós</a>
                     </li>
                     <li class="nav-item mx-2">
-                        <a class="nav-link" href="#">Nossa História</a>
+                        <a class="nav-link fw-semibold" href="#">Nossa História</a>
                     </li>
                     <li class="nav-item dropdown mx-2">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        <a class="nav-link dropdown-toggle fw-semibold" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Processo seletivo
                         </a>
-                        <ul class="dropdown-menu  mx-2">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <ul class="dropdown-menu mx-2">
+                            <li><a class="dropdown-item fw-semibold" href="#">Action</a></li>
+                            <li><a class="dropdown-item fw-semibold" href="#">Another action</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item fw-semibold" href="#">Something else here</a></li>
                         </ul>
                     </li>
                     <li class="nav-item mx-2">
-                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        <a class="nav-link disabled fw-semibold" aria-disabled="true">Disabled</a>
                     </li>
                 </ul>
-            </div>
+            </div>            
             <button type="button" class="btn btn-primarycolor h-auto px-4 py-2" data-bs-toggle="modal"
                 data-bs-target="#newsletterModal">
                 Receba novidades
@@ -270,7 +270,78 @@
             </div>
         </section>
     </section>
-
+    <section class="w-100 py-custom">
+        <section class="container d-flex flex-column align-items-center gap-5 py-5">
+            <h2 class="text-center fw-semibold fs-2">Últimas Notícias</h2>
+    
+            <div id="carouselNoticias" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators mt-4">
+                    <button type="button" data-bs-target="#carouselNoticias" data-bs-slide-to="0"
+                        class="carousel-btn active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselNoticias" data-bs-slide-to="1"
+                        class="carousel-btn" aria-label="Slide 2"></button>
+                </div>
+    
+                <div class="carousel-inner w-100">
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active py-3">
+                        <div class="d-flex justify-content-center gap-5 flex-wrap">
+                            <div class="card-post text-center">
+                                <img src="./assets/img/futuras-cientistas.png" alt="Notícia 1" class="img-fluid mb-3">
+                                <a href="https://uvv.br/noticias/2024/09/liga-feminina-de-ti-e-aprovada-no-programa-futuras-cientistas-do-cnpq/" target="_blank" class="fw-semibold text-decoration-none d-block">
+                                    Liga feminina de TI é aprovada no programa Futuras Cientistas do CNPq
+                                </a>
+                            </div>
+                            <div class="card-post text-center">
+                                <img src="./assets/img/liganoticiauvv.jpeg" alt="Notícia 2" class="img-fluid mb-3">
+                                <a href="https://uvv.br/noticias/2025/03/alunas-de-tecnologia-da-uvv-representaram-o-es-no-campus-mobile-em-sao-paulo/" target="_blank" class="fw-semibold text-decoration-none d-block">
+                                    Alunas de tecnologia da UVV representaram o ES no Campus Mobile, em São Paulo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- Slide 2 -->
+                    <div class="carousel-item py-3">
+                        <div class="d-flex justify-content-center gap-5 flex-wrap">
+                            <div class="card-post text-center">
+                                <img src="./assets/img/post3.jpg" alt="Notícia 3" class="img-fluid mb-3">
+                                <a href="https://exemplo.com/noticia3" target="_blank" class="fw-semibold text-decoration-none d-block">Título da Notícia 3</a>
+                            </div>
+                            <div class="card-post text-center">
+                                <img src="./assets/img/post4.jpg" alt="Notícia 4" class="img-fluid mb-3">
+                                <a href="https://exemplo.com/noticia4" target="_blank" class="fw-semibold text-decoration-none d-block">Título da Notícia 4</a>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- Slide 3 -->
+                    <div class="carousel-item py-3">
+                        <div class="d-flex justify-content-center gap-5 flex-wrap">
+                            <div class="card-post text-center">
+                                <img src="./assets/img/post5.jpg" alt="Notícia 5" class="img-fluid mb-3">
+                                <a href="https://exemplo.com/noticia5" target="_blank" class="fw-semibold text-decoration-none d-block">Título da Notícia 5</a>
+                            </div>
+                            <div class="card-post text-center">
+                                <img src="./assets/img/post6.jpg" alt="Notícia 6" class="img-fluid mb-3">
+                                <a href="https://exemplo.com/noticia6" target="_blank" class="fw-semibold text-decoration-none d-block">Título da Notícia 6</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselNoticias" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselNoticias" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                  </button>
+                                 
+            </div>
+        </section>
+    </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
