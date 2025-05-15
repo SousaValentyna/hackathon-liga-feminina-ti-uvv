@@ -1,239 +1,279 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liga Feminina de TI - UVV</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <!--<link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+
 </head>
+
 <body>
-    <section class="fundo-header">
-        <section class="center">
-            <header class="header">
-                <div class="img">
-                    <img src="./assets/img/logo-title.png" alt="logo oficial da liga">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme="bg-light">
+        <div class="container d-flex align-items-center">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+                <img src="/assets/img/logo.png" alt="Logo" width="40" height="50" class="d-inline-block align-text-top">
+                <div class="d-flex flex-column">
+                    <span class="logo-title1">Liga Acadêmica Feminina</span>
+                    <span class="logo-title2">de Tecnologia da Informação</span>
                 </div>
-                <nav class="navbar">
-                    <ul class="nav-box">
-                        <li><a href="#" class="nav-link">Sobre nós</a></li>
-                        <li><a href="#" class="nav-link">Processo Seletivo</a></li>
-                        <li><a href="#" class="nav-link">Membros</a></li>
-                        <li><a href="#" class="nav-link">Postagens</a></li>
-                        <a href="#" class="btn-content">Receba novidades</a>
-                    </ul>
-                </nav>
-            </header>
-        </section>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-center w-100">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link active" aria-current="page" href="#">Sobre nós</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#">Nossa História</a>
+                    </li>
+                    <li class="nav-item dropdown mx-2">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Processo seletivo
+                        </a>
+                        <ul class="dropdown-menu  mx-2">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+            <button type="button" class="btn btn-primarycolor h-auto px-4 py-2" data-bs-toggle="modal"
+                data-bs-target="#newsletterModal">
+                Receba novidades
+            </button>
+        </div>
+    </nav>
+    <!-- Modal -->
+    <div class="modal fade" id="newsletterModal" tabindex="-1" aria-labelledby="newsletterModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="newsletterModalLabel">Inscreva-se na nossa newsletter
+                    </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+
+                <div class="modal-body">
+                    <p>Cadastre seu e-mail para receber novidades, promoções e atualizações do nosso site:
+                    </p>
+
+                    <form id="newsletterForm">
+                        <div class="mb-3">
+                            <label for="emailInput" class="form-label">E-mail:</label>
+                            <input type="email" class="form-control" id="emailInput" placeholder="exemplo@dominio.com"
+                                required>
+                            <div class="invalid-feedback">Por favor, insira um e-mail válido.</div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="btn btn-primarycolor" form="newsletterForm">Cadastrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="bg-light py-custom d-flex flex-column justify-content-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-4 mb-md-0">
+                    <h1 class="fw-bold">Nós somos a <br>Liga Feminina de TI da Universidade Vila Velha</h1>
+                    <p class="lead">Um movimento criado por alunas e profissionais para<br>transformar o setor de
+                        tecnologia com mais diversidade,<br>inclusão e liderança feminina.</p>
+                    <a href="#" class="btn btn-primarycolor mt-3">Saiba Mais</a>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="./assets/img/programming.png" alt="" class="img-fluid" style="max-height: 400px;">
+                </div>
+            </div>
+        </div>
     </section>
-    <section class="fundo-home">
-        <section class="center">
-            <section class="home">
-                <section class="content-home">
-                    <div class="apresentacao-home">
-                        <h1 class="apresentacao-title">Nós somos a <br>Liga Feminina de TI da UVV</h1>
-                        <p class="apresentacao-descricao">Um movimento criado por alunas e profissionais para <br>transformar o setor de tecnologia com mais diversidade, <br>inclusão e liderança feminina.</p>
-                        <a href="#" class="btn-content">Saiba Mais</a>
-                    </div>
-                    <div class="img">
-                        <img src="./assets/img/programming.png" alt="mulher programando">
-                    </div>
-                </section>
-            </section>
-        </section>
+    <section class="our-story-bg py-custom">
+        <div class="container">
+            <h2 class="text-center fw-medium mb-custom fs-2">Nossa História</h2>
+
+            <!-- Missão -->
+            <div class="row align-items-stretch">
+                <div class="col-md-6 mb-4 mb-md-0 text-center">
+                    <img src="./assets/img/circuit.png" alt="circuit" class="img-fluid">
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-end">
+                    <h2 class="fw-medium fs-3 mb-3">Nossa missão</h2>
+                    <p class="texto-descricao">
+                        Estimular o crescimento profissional das mulheres em TI por meio de aprendizagem baseada em
+                        projetos que atendam às necessidades do mercado, capacitar com mentorias, treinamentos, pesquisa
+                        e extensão e fomentar oportunidades de carreira e networking para promover o desenvolvimento de
+                        lideranças femininas inovadoras, capazes de enriquecer e diversificar o setor.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Visão -->
+            <div class="row align-items-center py-5 flex-md-row-reverse">
+                <div class="col-md-6 mb-4 mb-md-0 text-center">
+                    <img src="./assets/img/robot.png" alt="robot" class="img-fluid" style="max-height: 300px;">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="fw-medium fs-3 mb-3">Nossa visão</h2>
+                    <p class="texto-descricao">
+                        Ser reconhecida no estado como referência na área de tecnologia por impulsionar a diversidade e
+                        a inovação.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Valores -->
+            <div class="row py-5">
+                <div class="col-12">
+                    <h2 class="fw-medium fs-3 mb-3">Nossos valores</h2>
+                    <p class="texto-descricao">
+                        <strong>Inclusão e Diversidade:</strong> Valorizamos a criação de um ambiente onde todas as
+                        mulheres, independentemente de sua origem, experiência ou identidade, se sintam acolhidas,
+                        respeitadas e tenham igualdade de oportunidades.<br>
+                        <strong>Capacitação:</strong> Comprometemo-nos a empoderar nossas membras, oferecendo as
+                        ferramentas e o conhecimento necessários para seu crescimento pessoal e profissional.<br>
+                        <strong>Colaboração:</strong> Acreditamos na força da comunidade e no poder da colaboração para
+                        alcançar objetivos comuns e promover mudanças significativas.<br>
+                        <strong>Inovação e Criatividade:</strong> Incentivamos a inovação e a criatividade, buscando
+                        sempre soluções inovadoras e eficazes para os desafios enfrentados pelo mercado.<br>
+                        <strong>Excelência e Qualidade:</strong> Nos dedicamos a manter os mais altos padrões de
+                        qualidade em todas as nossas atividades, programas e projetos.<br>
+                        <strong>Ética e Integridade:</strong> Agimos com ética, integridade e transparência em todas as
+                        nossas ações, mantendo um compromisso firme com nossos princípios.
+                    </p>
+                </div>
+            </div>
+        </div>
     </section>
-    <section class="fundo-our-story">
-        <section class="center">
-            <h2 class="title-1">Nossa História</h1>
-            <section class="our-mission">
-                <div class="img">
-                    <img src="./assets/img/circuit.png" alt="circuit">
-                </div>
-                <div class="our-mission-content">
-                    <h2 class="title">Nossa missão</h2>
-                    <p class="texto-descricao">Estimular o crescimento profissional das mulheres em TI por meio de aprendizagem baseada em projetos que atendam às necessidades do mercado, capacitar com mentorias, treinamentos, pesquisa e extensão e fomentar oportunidades de carreira e networking para promover o desenvolvimento de lideranças femininas inovadoras, capazes de enriquecer e diversificar o setor.</p>
-                </div>
-            </section>
-            <section class="our-vision-values">
-                <div class="our-vision">
-                    <div class="our-vision-content">
-                        <h2 class="title">Nossa visão</h2>
-                        <p class="texto-descricao">Ser reconhecida no estado como referência na área de tecnologia por impulsionar a diversidade e a inovação.</p>
-                    </div>
-                    <div class="img">
-                        <img src="./assets/img/robot.png" alt="">
-                    </div>
-                </div>
-                <div class="our-values-content">
-                    <h2 class="title">Nossos valores</h2>
-                    <p class="texto-descricao">Inclusão e Diversidade: Valorizamos a criação de um ambiente onde todas as mulheres, independentemente de sua origem, experiência ou identidade, se sintam acolhidas, respeitadas e tenham igualdade de oportunidades.
-                        Capacitação: Comprometemo-nos a empoderar nossas membras, oferecendo as ferramentas e o conhecimento necessários para seu crescimento pessoal e profissional.
-                        Colaboração: Acreditamos na força da comunidade e no poder da colaboração para alcançar objetivos comuns e promover mudanças significativas.
-                        Inovação e Criatividade: Incentivamos a inovação e a criatividade, buscando sempre soluções inovadoras e eficazes para os desafios enfrentados pelo mercado. 
-                        Excelência e Qualidade: Nos dedicamos a manter os mais altos padrões de qualidade em todas as nossas atividades, programas e projetos.
-                        Ética e Integridade: Agimos com ética, integridade e transparência em todas as nossas ações, mantendo um compromisso firme com nossos princípios.
-                        </p>
-                </div>
-            </section>
-        </section>
+    <section class="container py-custom">
+        <div class="text-center mb-5">
+            <h2 class="fw-semibold fs-2">Nosso Processo Seletivo</h2>
+        </div>
+        <div class="row align-items-center">
+            <!-- Texto -->
+            <div class="col-md-6">
+                <h3 class="fw-semibold fs-4 mb-3">Requisitos para participação:</h3>
+                <ul class="list-unstyled">
+                    <li class="mb-2">✔ Nossa iniciativa é exclusivamente voltada para mulheres (cisgênero ou trans);
+                    </li>
+                    <li class="mb-2">✔ É necessário estar matriculada em cursos de graduação como Ciência da Computação,
+                        Sistemas da Informação, Engenharia da Computação ou áreas correlatas em qualquer universidade
+                        e/ou atuar profissionalmente na área de TI;</li>
+                    <li class="mb-2">✔ Ter disponibilidade para dedicar 4 horas semanais e participar de reuniões
+                        regulares presenciais e online, workshops e eventos organizados pela liga.</li>
+                </ul>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="./assets/img/lampada.png" alt="Ícone de lâmpada" class="img-fluid" style="max-width: 80%;">
+            </div>
+        </div>
     </section>
-    <section class="center">
-        <section class="selecao">
-            <h2 class="title-1">Nosso Processo Seletivo</h2>
-            <section class="selecao-box">
-                <div class="selecao-content">
-                    <h3 class="title-h3">Requisitos para participação:</h3>
-                    <ul class="ul">
-                        <li class="li">Nossa iniciativa é exclusivamente voltada para mulheres (cisgênero ou trans);</li>
-                        <li class="li">É necessário estar matriculada em cursos de graduação como Ciência da Computação, Sistemas da Informação, Engenharia da Computação ou áreas correlatas em qualquer universidade e/ou atuar profissionalmente na área de TI;</li>
-                        <li class="li">Ter disponibilidade para dedicar 4 horas semanais e participar de reuniões regulares presenciais e online, workshops e eventos organizados pela liga.</li>
-                    </ul>
+    <section class="w-100 py-custom">
+        <section class="container d-flex flex-column align-items-center gap-5 py-5">
+            <h2 class="text-center fw-semibold fs-2">Membros da Liga</h2>
+
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators mt-4">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="carousel-btn active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        class="carousel-btn" aria-label="Slide 2"></button>
                 </div>
-                <div class="img">
-                    <img src="./assets/img/lampada.png" alt="">
-                </div>
-            </section>
-        </section>
-    </section>
-    <section class="fundo-membros">
-        <section class="center">
-            <h2 class="title-1">Membros da Liga</h2>
-                  <section class="membros">
-                    <div class="membro">
-                        <img src="./assets/img/pessoa1.jpg" alt="">
-                        <div class="title-subtitle">
-                            <h4 class="title-h4">Nome</h4>
-                            <h6 class="title-h6">Curso da Faculdade</h6>
+
+                <div class="carousel-inner w-100">
+                    <div class="carousel-item active py-3">
+                        <div class="d-flex justify-content-center gap-5 flex-wrap">
+                            <div class="card-integrante">
+                                <img src="./assets/img/IsabelValentim.jpeg" alt="" class="img-fluid mb-3">
+                                <div class="text-center">
+                                    <h4 class="fw-semibold">Isabel Valentim</h4>
+                                    <h6>Curso 1</h6>
+                                </div>
+                            </div>
+                            <div class="card-integrante">
+                                <img src="./assets/img/luanaTexeira.jpeg" alt="" class="img-fluid mb-3">
+                                <div class="text-center">
+                                    <h4 class="fw-semibold">Luana Teixeira da Silva</h4>
+                                    <h6>Curso 2</h6>
+                                </div>
+                            </div>
+                            <div class="card-integrante">
+                                <img src="./assets/img/mariaFiorio.jpeg" alt="" class="img-fluid mb-3">
+                                <div class="text-center">
+                                    <h4 class="fw-semibold">Maria Eduarda Fiorio</h4>
+                                    <h6>Curso 3</h6>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="membro">
-                        <img src="./assets/img/pessoa1.jpg" alt="">
-                        <div class="title-subtitle">
-                            <h4 class="title-h4">Nome</h4>
-                            <h6 class="title-h6">Curso da Faculdade</h6>
+
+                    <div class="carousel-item py-3">
+                        <div class="d-flex justify-content-center gap-5 flex-wrap">
+                            <div class="card-integrante">
+                                <img src="./assets/img/MarcelaSantos.jpeg" alt="" class="img-fluid mb-3">
+                                <div class="text-center">
+                                    <h4 class="fw-semibold">Marcela R dos Santos</h4>
+                                    <h6>Curso 4</h6>
+                                </div>
+                            </div>
+                            <div class="card-integrante">
+                                <img src="./assets/img/laraMendes.jpeg" alt="" class="img-fluid mb-3">
+                                <div class="text-center">
+                                    <h4 class="fw-semibold">Lara Mendes Valin</h4>
+                                    <h6>Curso 5</h6>
+                                </div>
+                            </div>
+                            <div class="card-integrante">
+                                <img src="./assets/img/Nikelly.jpeg" alt="" class="img-fluid mb-3">
+                                <div class="text-center">
+                                    <h4 class="fw-semibold">Nikelly S J Thomaz</h4>
+                                    <h6>Curso 6</h6>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="membro">
-                        <img src="./assets/img/pessoa1.jpg" alt="">
-                        <div class="title-subtitle">
-                            <h4 class="title-h4">Nome</h4>
-                            <h6 class="title-h6">Curso da Faculdade</h6>
-                        </div>
-                    </div>
-                  </section>
-                    <div class="bullets">
-                    <a href="#" class="bullet ativo"></a>
-                    <a href="#" class="bullet"></a>
-                    <a href="#" class="bullet"></a>
                 </div>
-        </section>
-    </section>
-    <section class="fundo-posts">
-        <section class="center">
-            <h2 class="title-1">Nossas postagens</h2>
-            <section class="postagens">
-                <div class="post">
-                    <img src="./assets/img/post.jpg" alt="">
-                    <div class="title-subtitle">
-                        <h4 class="title-h4">The Universe Through A Child S Eyes</h4>
-                        <h6 class="title-h6">By Speed Smith | 08 Feb 2019</h6>
-                    </div>
-                </div>
-                <div class="post">
-                    <img src="./assets/img/post.jpg" alt="">
-                    <div class="title-subtitle">
-                        <h4 class="title-h4">The Universe Through A Child S Eyes</h4>
-                        <h6 class="title-h6">By Speed Smith | 08 Feb 2019</h6>
-                    </div>
-                </div>
-                <div class="post">
-                    <img src="./assets/img/post.jpg" alt="">
-                    <div class="title-subtitle">
-                        <h4 class="title-h4">The Universe Through A Child S Eyes</h4>
-                        <h6 class="title-h6">By Speed Smith | 08 Feb 2019</h6>
-                    </div>
-                </div>
-            </section>
-            <div class="bullets">
-                <a href="#" class="bullet ativo"></a>
-                <a href="#" class="bullet"></a>
-                <a href="#" class="bullet"></a>
+
+                <button class="carousel-control-prev custom-nav" type="button"
+                    data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next custom-nav" type="button"
+                    data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
             </div>
         </section>
     </section>
-    <section class="fundo-email">
-        <section class="center">
-            <div class="email">
-                <span class="text-email">
-                    Cadastre seu e-mail para receber novidades sobre a Liga.
-                </span>
-                <form action="" class="form-email">
-                    <div class="div-text-input">
-                        <input type="text" class="text-input" placeholder="Entre com seu e-mail">
-                    </div>
-                    <div class="div-submit-input">
-                        <input type="submit" name="" id="" class="submit-input" value="">
-                    </div>
-                </form>
-            </div>
-        </section>
-    </section>
-    <section class="fundo-footer">
-        <section class="center">
-            <section class="footer-contact">
-                <div class="logo">
-                    <img src="/assets/img/logocompleta.png" alt="logo">
-                </div>
-                <div class="texto">
-                    <h6 class="texto-footer">
-                        Nós fazemos a diferença
-                    </h6>
-                </div>
-                <div class="social-links">
-                    <div class="instagram-logo">
-                        <img src="/assets/img/instagram.png" alt="">
-                    </div>
-                </div>
-            </section>
-            <section class="footer-box">
-                <div class="div-nav-footer">
-                    <ul class="nav-footer">
-                        <li class="div-nav-footer">
-                            <a href=""  class="nav-link-title">A Liga</a>
-                            <ul class="sub-menu">
-                                <li><a href=""  class="nav-link2">Sobre nós</a></li>
-                                <li><a href=""  class="nav-link2">Nossa história</a></li>
-                                <li><a href=""  class="nav-link2">Membros</a></li>
-                                <li><a href=""  class="nav-link2">Processo Seletivo</a></li>
-                            </ul>
-                        </li>
-                        <li class="div-nav-footer">
-                            <a href=""  class="nav-link-title">Projetos</a>
-                            <ul class="sub-menu">
-                                <li><a href=""  class="nav-link2">Futuras Cientistas</a></li>
-                                <li><a href=""  class="nav-link2">Hackathon</a></li>
-                            </ul>
-                        </li>
-                        <li class="div-nav-footer">
-                            <a href=""  class="nav-link-title">Informações</a>
-                            <ul class="sub-menu"> 
-                                <li><a href=""  class="nav-link2">Fale conosco</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-        </section>
-    </section>
-    <section class="fundo-footer-dev">
-        <section class="center">
-            <div class="dev">
-                <span>Desenvolvido por Valentyna © 2025</span>
-            </div>
-        </section>
-    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
