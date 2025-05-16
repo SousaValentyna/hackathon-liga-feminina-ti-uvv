@@ -16,7 +16,52 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top bg-white shadow-sm" data-bs-theme="bg-light">
+    <!--<header id="header" class="header d-flex align-items-center fixed-top">
+        <div class="container position-relative d-flex align-items-center justify-content-between">
+
+            <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+                <!-- Uncomment the line below if you also wish to use an image logo -->
+                <!-- <img src="assets/img/logo.webp" alt="">
+                <h1 class="sitename">Invent</h1><span>.</span>
+            </a>
+
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li><a href="#hero" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li class="dropdown"><a href="#"><span>Dropdown</span> <i
+                                class="bi bi-chevron-down toggle-dropdown"></i></a>
+                        <ul>
+                            <li><a href="#">Dropdown 1</a></li>
+                            <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i
+                                        class="bi bi-chevron-down toggle-dropdown"></i></a>
+                                <ul>
+                                    <li><a href="#">Deep Dropdown 1</a></li>
+                                    <li><a href="#">Deep Dropdown 2</a></li>
+                                    <li><a href="#">Deep Dropdown 3</a></li>
+                                    <li><a href="#">Deep Dropdown 4</a></li>
+                                    <li><a href="#">Deep Dropdown 5</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Dropdown 2</a></li>
+                            <li><a href="#">Dropdown 3</a></li>
+                            <li><a href="#">Dropdown 4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+
+            <a class="btn-getstarted" href="#about">Get Started</a>
+
+        </div>
+    </header>-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top bg-white shadow" data-bs-theme="bg-light">
         <div class="container d-flex align-items-center">
             <a class="navbar-brand d-flex align-items-center gap-2" href="#">
                 <img src="/assets/img/logo.png" alt="Logo" width="40" height="50" class="d-inline-block align-text-top">
@@ -33,24 +78,28 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-center w-100">
                     <li class="nav-item mx-2">
-                        <a class="nav-link active fw-semibold" aria-current="page" href="#">Sobre nós</a>
+                        <a class="nav-link active fw-semibold" aria-current="page" href="#home">Home</a>
                     </li>
                     <li class="nav-item mx-2">
-                        <a class="nav-link fw-semibold" href="#">Nossa História</a>
+                        <a class="nav-link active fw-semibold" aria-current="page" href="#members">Integrantes</a>
                     </li>
                     <li class="nav-item dropdown mx-2">
-                        <a class="nav-link dropdown-toggle fw-semibold" href="#" role="button" data-bs-toggle="dropdown"
+                        <a class="nav-link dropdown-toggle fw-semibold" href="#historia" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            Processo seletivo
+                            Nossa História
                         </a>
                         <ul class="dropdown-menu mx-2">
-                            <li><a class="dropdown-item fw-semibold" href="#">Action</a></li>
-                            <li><a class="dropdown-item fw-semibold" href="#">Another action</a></li>
+                            <li><a class="dropdown-item fw-semibold" href="#nossahistoria">História da Liga</a></li>
+                            <li><a class="dropdown-item fw-semibold" href="#missao">Nossa Missão</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item fw-semibold" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item fw-semibold" href="#visao">Nossa Visão</a></li>
+                            <li><a class="dropdown-item fw-semibold" href="#valores">Nossos Valores</a></li>
                         </ul>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link fw-semibold" href="#processo">Processo seletivo</a>
                     </li>
                     <li class="nav-item mx-2">
                         <a class="nav-link disabled fw-semibold" aria-disabled="true">Disabled</a>
@@ -73,11 +122,9 @@
                     </h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
                 </div>
-
                 <div class="modal-body">
                     <p>Cadastre seu e-mail para receber novidades, promoções e atualizações do nosso site:
                     </p>
-
                     <form id="newsletterForm">
                         <div class="mb-3">
                             <label for="emailInput" class="form-label">E-mail:</label>
@@ -87,7 +134,6 @@
                         </div>
                     </form>
                 </div>
-
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
                     <button type="submit" class="btn btn-primarycolor" form="newsletterForm">Cadastrar</button>
@@ -95,26 +141,148 @@
             </div>
         </div>
     </div>
-    <section class="bg-light py-custom d-flex flex-column justify-content-center">
+    <section id="home" class="bg-color py-custom d-flex flex-column justify-content-center">
         <div class="container">
-            <div class="row align-items-center">
+            <div class="row align-items-center index-details">
                 <div class="col-md-6 text-center text-md-start mb-4 mb-md-0">
                     <h1 class="fw-bold">Nós somos a <br>Liga Feminina de TI da Universidade Vila Velha</h1>
                     <p class="lead">Um movimento criado por alunas e profissionais para<br>transformar o setor de
                         tecnologia com mais diversidade,<br>inclusão e liderança feminina.</p>
                     <a href="#" class="btn btn-primarycolor mt-3">Saiba Mais</a>
                 </div>
-                <div class="col-md-6 text-center">
-                    <img src="./assets/img/programming.png" alt="" class="img-fluid" style="max-height: 400px;">
+                <div class="col-md-6 text-center index-details">
+                    <img src="./assets/img/img.png" alt="" class="img-fluid" style="max-height: 500px;">
                 </div>
             </div>
         </div>
     </section>
+    <!-- About Section ----------------------------------------------------------------- -->
     <section class="our-story-bg py-custom">
+        <section id="nossahistoria" class="about section pt-4">
+            <div class="container content">
+                <h2>Nossa História</h2>
+                <div class="row gy-4">
+                    <div class="col-lg-6 content pe-5" data-aos="fade-up" data-aos-delay="100">
+                        <h3>História da Liga Feminina de TI da UVV</h3>
+                        <span>A Liga Feminina de TI da Universidade de Vila Velha (UVV) foi fundada em 2024 como um
+                            projeto de extensão universitária sem fins lucrativos, idealizado por alunas dos cursos de
+                            tecnologia da instituição e profissionais da área. Somos a primeira liga feminina de
+                            tecnologia do Espírito Santo, e nossa história começou de forma simples — com um café em um
+                            sábado à tarde e muitas ideias compartilhadas. O que nasceu como uma conversa entre colegas
+                            se transformou em um movimento com propósito: tornar o mercado de tecnologia da informação
+                            mais diverso, acolhedor e inclusivo.
+                            A Liga é formada por estudantes mulheres dos cursos de tecnologia da UVV e por profissionais
+                            da área de TI, que juntas promovem ações voltadas à formação técnica, apoio mútuo e
+                            visibilidade feminina no setor.
+                        </span>
+                    </div>
+                    <div class="col-lg-6 about-images" data-aos="fade-up" data-aos-delay="200">
+                        <div class="row gy-4">
+                            <div class="col-lg-6">
+                                <img src="assets/img/img_insta2.jpg" class="img-fluid" alt="">
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="row gy-4">
+                                    <div class="col-lg-12 details">
+                                        <img src="assets/img/img_insta4.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <!--<div class="col-lg-12 details">
+                                        <img src="assets/img/img_insta3.jpg" class="img-fluid" alt="">
+                                    </div>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- /About Section -->
+        <!-- About Section -->
+        <section id="missao" class="about section pt-5">
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-lg-6 about-images" data-aos="fade-up" data-aos-delay="200">
+                        <div class="row gy-4">
+                            <!--<div class="col-lg-6">
+                                <img src="assets/img/IsabelValentim.jpeg" class="img-fluid" alt="">
+                            </div>-->
+                            <div class="col-lg-6">
+                                <div class="row gy-4">
+                                    <div class="col-lg-12">
+                                        <img src="assets/img/circuit.png" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+                        <h3>Nossa Missão</h3>
+                        <span>Estimular o crescimento profissional das mulheres em TI por meio de aprendizagem baseada
+                            em projetos que atendam às necessidades do mercado, capacitar com mentorias, treinamentos,
+                            pesquisa e extensão e fomentar oportunidades de carreira e networking para promover o
+                            desenvolvimento de lideranças femininas inovadoras, capazes de enriquecer e diversificar o
+                            setor.</span>
+                    </div>
+                </div>
+            </div>
+        </section><!-- /About Section -->
+        <section id="visao" class="about section pt-5">
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+                        <h3>Nossa Visão</h3>
+                        <span>Ser reconhecida no estado como referência na área de tecnologia por impulsionar a
+                            diversidade e
+                            a inovação.</span>
+                    </div>
+                    <div class="col-lg-6 about-images" data-aos="fade-up" data-aos-delay="200">
+                        <div class="row gy-4">
+                            <!--<div class="col-lg-6">
+                                <img src="assets/img/robot.png" class="img-fluid" alt="">
+                            </div>-->
+                            <div class="col-lg-6">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- /About Section -->
+        <section id="valores" class="about section pt-5">
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-lg-6 about-images" data-aos="fade-up" data-aos-delay="200">
+                        <div class="row gy-4">
+                            <div class="col-lg-6">
+                                <img src="assets/img/robot.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="col-lg-6">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+                        <h3>Nossos Valores</h3>
+                        <span>Inclusão e Diversidade: Valorizamos a criação de um ambiente onde todas as mulheres,
+                            independentemente de sua origem, experiência ou identidade, se sintam acolhidas, respeitadas
+                            e tenham igualdade de oportunidades.
+                            Capacitação: Comprometemo-nos a empoderar nossas membras, oferecendo as ferramentas e o
+                            conhecimento necessários para seu crescimento pessoal e profissional.
+                            Colaboração: Acreditamos na força da comunidade e no poder da colaboração para alcançar
+                            objetivos comuns e promover mudanças significativas.
+                            Inovação e Criatividade: Incentivamos a inovação e a criatividade, buscando sempre soluções
+                            inovadoras e eficazes para os desafios enfrentados pelo mercado.
+                            Excelência e Qualidade: Nos dedicamos a manter os mais altos padrões de qualidade em todas
+                            as nossas atividades, programas e projetos.
+                            Ética e Integridade: Agimos com ética, integridade e transparência em todas as nossas ações,
+                            mantendo um compromisso firme com nossos princípios.</span>
+                    </div>
+                </div>
+            </div>
+        </section><!-- /About Section -->
+    </section>
+    <!--<section class="our-story-bg py-custom">
         <div class="container">
             <h2 class="text-center fw-medium mb-custom fs-2">Nossa História</h2>
 
-            <!-- Missão -->
+            <!-- Missão -
             <div class="row align-items-stretch">
                 <div class="col-md-6 mb-4 mb-md-0 text-center">
                     <img src="./assets/img/circuit.png" alt="circuit" class="img-fluid">
@@ -130,7 +298,7 @@
                 </div>
             </div>
 
-            <!-- Visão -->
+            <!-- Visão 
             <div class="row align-items-center py-5 flex-md-row-reverse">
                 <div class="col-md-6 mb-4 mb-md-0 text-center">
                     <img src="./assets/img/robot.png" alt="robot" class="img-fluid" style="max-height: 300px;">
@@ -144,7 +312,7 @@
                 </div>
             </div>
 
-            <!-- Valores -->
+            <!-- Valores 
             <div class="row py-5">
                 <div class="col-12">
                     <h2 class="fw-medium fs-3 mb-3">Nossos valores</h2>
@@ -166,157 +334,76 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section class="container py-custom">
-        <div class="text-center mb-5">
-            <h2 class="fw-semibold fs-2">Nosso Processo Seletivo</h2>
-        </div>
-        <div class="row align-items-center">
-            <!-- Texto -->
-            <div class="col-md-6">
-                <h3 class="fw-semibold fs-4 mb-3">Requisitos para participação:</h3>
-                <ul class="list-unstyled">
-                    <li class="mb-2">✔ Nossa iniciativa é exclusivamente voltada para mulheres (cisgênero ou trans);
-                    </li>
-                    <li class="mb-2">✔ É necessário estar matriculada em cursos de graduação como Ciência da Computação,
-                        Sistemas da Informação, Engenharia da Computação ou áreas correlatas em qualquer universidade
-                        e/ou atuar profissionalmente na área de TI;</li>
-                    <li class="mb-2">✔ Ter disponibilidade para dedicar 4 horas semanais e participar de reuniões
-                        regulares presenciais e online, workshops e eventos organizados pela liga.</li>
-                </ul>
-            </div>
-            <div class="col-md-6 text-center">
-                <img src="./assets/img/lampada.png" alt="Ícone de lâmpada" class="img-fluid" style="max-width: 80%;">
-            </div>
-        </div>
-    </section>
-    <section class="w-100 py-custom">
-        <section class="container d-flex flex-column align-items-center gap-5 py-5">
-            <h2 class="text-center fw-semibold fs-2">Membros da Liga</h2>
-
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators mt-4">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                        class="carousel-btn active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                        class="carousel-btn" aria-label="Slide 2"></button>
-                </div>
-
-                <div class="carousel-inner w-100">
-                    <div class="carousel-item active py-3">
-                        <div class="d-flex justify-content-center gap-5 flex-wrap">
-                            <div class="card-integrante">
-                                <img src="./assets/img/IsabelValentim.jpeg" alt="" class="img-fluid mb-3">
-                                <div class="text-center">
-                                    <h4 class="fw-semibold">Isabel Valentim</h4>
-                                    <h6>Curso 1</h6>
-                                </div>
-                            </div>
-                            <div class="card-integrante">
-                                <img src="./assets/img/luanaTexeira.jpeg" alt="" class="img-fluid mb-3">
-                                <div class="text-center">
-                                    <h4 class="fw-semibold">Luana Teixeira da Silva</h4>
-                                    <h6>Curso 2</h6>
-                                </div>
-                            </div>
-                            <div class="card-integrante">
-                                <img src="./assets/img/mariaFiorio.jpeg" alt="" class="img-fluid mb-3">
-                                <div class="text-center">
-                                    <h4 class="fw-semibold">Maria Eduarda Fiorio</h4>
-                                    <h6>Curso 3</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="carousel-item py-3">
-                        <div class="d-flex justify-content-center gap-5 flex-wrap">
-                            <div class="card-integrante">
-                                <img src="./assets/img/MarcelaSantos.jpeg" alt="" class="img-fluid mb-3">
-                                <div class="text-center">
-                                    <h4 class="fw-semibold">Marcela R dos Santos</h4>
-                                    <h6>Curso 4</h6>
-                                </div>
-                            </div>
-                            <div class="card-integrante">
-                                <img src="./assets/img/laraMendes.jpeg" alt="" class="img-fluid mb-3">
-                                <div class="text-center">
-                                    <h4 class="fw-semibold">Lara Mendes Valin</h4>
-                                    <h6>Curso 5</h6>
-                                </div>
-                            </div>
-                            <div class="card-integrante">
-                                <img src="./assets/img/Nikelly.jpeg" alt="" class="img-fluid mb-3">
-                                <div class="text-center">
-                                    <h4 class="fw-semibold">Nikelly S J Thomaz</h4>
-                                    <h6>Curso 6</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <button class="carousel-control-prev custom-nav" type="button"
-                    data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Anterior</span>
-                </button>
-                <button class="carousel-control-next custom-nav" type="button"
-                    data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Próximo</span>
-                </button>
-            </div>
-        </section>
-    </section>
-    <section class="d-flex justify-content-center flex-wrap mb-custom">
-        <div id="carouselPosts" class="carousel slide">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselPosts" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselPosts" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselPosts" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active d-flex flex-column">
-                    <a href="https://uvv.br/noticias/2024/09/liga-feminina-de-ti-e-aprovada-no-programa-futuras-cientistas-do-cnpq/"
-                        target="_blank">
-                        <img src="/assets/img/futuras-cientistas.png" class="" alt="...">
-                    </a>
-                </div>
-                <div class="carousel-item">
-                    <img src="/assets/img/liganoticiauvv.jpeg" class="" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="/assets/img/futuras-cientistas.png" class="" alt="...">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselPosts" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselPosts" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </section>
-
-
-    <section id="team" class="team section light-background mb-custom">
-
+    </section>-->
+    <!-- How We Work Section -->
+    <section id="processo" class="how-we-work section">
         <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-            <h2>Team</h2>
-            <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <div class="container section-title content" data-aos="fade-up">
+            <h2>Processo Seletivo</h2>
+            <!--<p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>-->
         </div><!-- End Section Title -->
-
         <div class="container" data-aos="fade-up" data-aos-delay="100">
-
+            <div class="steps-5">
+                <div class="process-container">
+                    <div class="process-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="content">
+                            <span class="step-number">01</span>
+                            <div class="card-body">
+                                <div class="step-icon">
+                                    <i class="bi bi-check-circle"></i>
+                                </div>
+                                <div class="step-content">
+                                    <h3>Fique atenta</h3>
+                                    <p>Nossa iniciativa é exclusivamente voltada para mulheres (cisgênero ou trans);</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- End Process Item -->
+                    <div class="process-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="content">
+                            <span class="step-number">02</span>
+                            <div class="card-body">
+                                <div class="step-icon">
+                                    <i class="bi bi-check-circle"></i>
+                                </div>
+                                <div class="step-content">
+                                    <h3>Fique atenta</h3>
+                                    <p>É necessário estar matriculada em cursos de graduação como Ciência da Computação,
+                                        Sistemas da Informação, Engenharia da Computação ou áreas correlatas em qualquer
+                                        universidade e/ou atuar profissionalmente na área de TI;
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- End Process Item -->
+                    <div class="process-item" data-aos="fade-up" data-aos-delay="400">
+                        <div class="content">
+                            <span class="step-number">03</span>
+                            <div class="card-body">
+                                <div class="step-icon">
+                                    <i class="bi bi-check-circle"></i>
+                                </div>
+                                <div class="step-content">
+                                    <h3>Fique atenta</h3>
+                                    <p>Ter disponibilidade para dedicar 4 horas semanais e participar de reuniões
+                                        regulares presenciais e online, workshops e eventos organizados pela liga.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- End Process Item -->
+                </div>
+            </div>
+        </div>
+    </section><!-- /How We Work Section -->
+    <section id="members" class="team section light-background py-custom">
+        <!-- Section Title -->
+        <div class="container section-title content" data-aos="fade-up">
+            <h2>Nossas Integrantes</h2>
+            <!--<p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>-->
+        </div><!-- End Section Title -->
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
             <div class="row g-5">
-
                 <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="100">
                     <div class="team-card">
                         <div class="team-image">
@@ -333,12 +420,11 @@
                             </div>
                         </div>
                         <div class="team-content">
-                            <h4>Daniel Mitchell</h4>
-                            <span class="position">Creative Director</span>
+                            <h4>Isabel Valentim</h4>
+                            <span class="position">Ciência da Computação</span>
                         </div>
                     </div>
                 </div><!-- End Team Member -->
-
                 <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="200">
                     <div class="team-card">
                         <div class="team-image">
@@ -355,12 +441,11 @@
                             </div>
                         </div>
                         <div class="team-content">
-                            <h4>Rebecca Taylor</h4>
-                            <span class="position">Lead Developer</span>
+                            <h4>Maria Eduarda Fiorio</h4>
+                            <span class="position">Ciência da Computação</span>
                         </div>
                     </div>
                 </div><!-- End Team Member -->
-
                 <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="300">
                     <div class="team-card">
                         <div class="team-image">
@@ -377,12 +462,11 @@
                             </div>
                         </div>
                         <div class="team-content">
-                            <h4>Marcus Johnson</h4>
-                            <span class="position">UI/UX Designer</span>
+                            <h4>Nikelly S J Thomaz</h4>
+                            <span class="position">Ciência da Computação</span>
                         </div>
                     </div>
                 </div><!-- End Team Member -->
-
                 <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="400">
                     <div class="team-card">
                         <div class="team-image">
@@ -399,88 +483,133 @@
                             </div>
                         </div>
                         <div class="team-content">
-                            <h4>Jessica Parker</h4>
-                            <span class="position">Marketing Strategist</span>
+                            <h4>Marcela R dos Santos</h4>
+                            <span class="position">Ciência da Computação</span>
                         </div>
                     </div>
                 </div><!-- End Team Member -->
-
-            </div>
-
-        </div>
-
-    </section><!-- /Team Section -->
-
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section mb-custom">
-
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-            <h2>Portfolio</h2>
-            <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-        </div><!-- End Section Title -->
-
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-                <div class="portfolio-filters-container" data-aos="fade-up" data-aos-delay="200">
-                    <ul class="portfolio-filters isotope-filters">
-                        <li data-filter="*" class="filter-active">All Work</li>
-                        <li data-filter=".filter-web">Web Design</li>
-                        <li data-filter=".filter-graphics">Graphics</li>
-                        <li data-filter=".filter-motion">Motion</li>
-                        <li data-filter=".filter-brand">Branding</li>
-                    </ul>
+                <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="assets/img/laraMendes.jpeg" class="img-fluid" alt="">
+                            <div class="team-overlay">
+                                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                                    egestas.</p>
+                                <div class="team-social">
+                                    <a href=""><i class="bi bi-twitter-x"></i></a>
+                                    <a href=""><i class="bi bi-facebook"></i></a>
+                                    <a href=""><i class="bi bi-instagram"></i></a>
+                                    <a href=""><i class="bi bi-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-content">
+                            <h4>Lara Mendes Valin</h4>
+                            <span class="position">Ciência da Computação</span>
+                        </div>
+                    </div>
                 </div>
-
+                <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="assets/img/suellen.jpeg" class="img-fluid" alt="">
+                            <div class="team-overlay">
+                                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                                    egestas.</p>
+                                <div class="team-social">
+                                    <a href=""><i class="bi bi-twitter-x"></i></a>
+                                    <a href=""><i class="bi bi-facebook"></i></a>
+                                    <a href=""><i class="bi bi-instagram"></i></a>
+                                    <a href=""><i class="bi bi-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-content">
+                            <h4>Suellen Miranda Amorim</h4>
+                            <span class="position">Ciência da Computação</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="assets/img/luanaTexeira.jpeg" class="img-fluid" alt="">
+                            <div class="team-overlay">
+                                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                                    egestas.</p>
+                                <div class="team-social">
+                                    <a href=""><i class="bi bi-twitter-x"></i></a>
+                                    <a href=""><i class="bi bi-facebook"></i></a>
+                                    <a href=""><i class="bi bi-instagram"></i></a>
+                                    <a href=""><i class="bi bi-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-content">
+                            <h4>Luana Teixeira da Silva</h4>
+                            <span class="position">Ciência da Computação</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section py-custom">
+        <!-- Section Title -->
+        <div class="container section-title content" data-aos="fade-up">
+            <h2>Postagens Recentes</h2>
+            <!--<p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>-->
+        </div><!-- End Section Title -->
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+            <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
                 <div class="row g-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
 
                     <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-web">
                         <div class="portfolio-card">
                             <div class="portfolio-image">
-                                <img src="assets/img//liganoticiauvv.jpeg" class="img-fluid" alt=""
-                                    loading="lazy">
-                                <div class="portfolio-overlay">
-                                    <div class="portfolio-actions">
-                                        <a href="assets/img/liganoticiauvv.jpeg" class="glightbox preview-link"
-                                            data-gallery="portfolio-gallery-web"><i class="bi bi-eye"></i></a>
-                                        <a href="portfolio-details.html" class="details-link"><i
-                                                class="bi bi-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="portfolio-content">
-                                <span class="category">Web Design</span>
-                                <h3>Modern Dashboard Interface</h3>
-                                <p>Maecenas faucibus mollis interdum sed posuere consectetur est at lobortis.</p>
-                            </div>
-                        </div>
-                    </div><!-- End Portfolio Item -->
-
-                    <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-graphics">
-                        <div class="portfolio-card">
-                            <div class="portfolio-image">
-                                <img src="assets/img/futuras-cientistas.png" class="img-fluid" alt=""
-                                    loading="lazy">
+                                <img src="assets/img/futuras-cientistas.png" class="img-fluid" alt="" loading="lazy">
                                 <div class="portfolio-overlay">
                                     <div class="portfolio-actions">
                                         <a href="assets/img/futuras-cientistas.png" class="glightbox preview-link"
-                                            data-gallery="portfolio-gallery-graphics"><i class="bi bi-eye"></i></a>
-                                        <a href="portfolio-details.html" class="details-link"><i
-                                                class="bi bi-arrow-right"></i></a>
+                                            data-gallery="portfolio-gallery-web"><i class="bi bi-eye"></i></a>
+                                        <a href="https://uvv.br/noticias/2024/09/liga-feminina-de-ti-e-aprovada-no-programa-futuras-cientistas-do-cnpq/"
+                                            class="details-link" target="_blank"><i class="bi bi-arrow-right"></i></a>
                                     </div>
                                 </div>
                             </div>
                             <div class="portfolio-content">
-                                <span class="category">Graphics</span>
-                                <h3>Creative Brand Identity</h3>
-                                <p>Vestibulum id ligula porta felis euismod semper at vulputate.</p>
+                                <a href="https://uvv.br/noticias/2024/09/liga-feminina-de-ti-e-aprovada-no-programa-futuras-cientistas-do-cnpq/"
+                                    class="link-none" target="_blank">
+                                    <h3>Liga feminina de TI é aprovada no programa Futuras Cientistas do CNPq</h3>
+                                    <p>Vestibulum id ligula porta felis euismod semper at vulputate.</p>
+                                </a>
                             </div>
                         </div>
                     </div><!-- End Portfolio Item -->
-
+                    <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-graphics">
+                        <div class="portfolio-card">
+                            <div class="portfolio-image">
+                                <img src="assets/img/liganoticiauvv.jpeg" class="img-fluid" alt="" loading="lazy">
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-actions">
+                                        <a href="assets/img/liganoticiauvv.jpeg" class="glightbox preview-link"
+                                            data-gallery="portfolio-gallery-graphics"><i class="bi bi-eye"></i></a>
+                                        <a href="https://uvv.br/noticias/2025/03/alunas-de-tecnologia-da-uvv-representaram-o-es-no-campus-mobile-em-sao-paulo/"
+                                            class="details-link" target="_blank"><i class="bi bi-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio-content">
+                                <a href="https://uvv.br/noticias/2025/03/alunas-de-tecnologia-da-uvv-representaram-o-es-no-campus-mobile-em-sao-paulo/"
+                                    class="link-none" target="_blank">
+                                    <h3>Alunas de tecnologia da UVV representaram o ES no Campus Mobile, em São Paulo
+                                    </h3>
+                                    <p>Vestibulum id ligula porta felis euismod semper at vulputate.</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div><!-- End Portfolio Item -->
                     ,<!--<div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-motion">
                         <div class="portfolio-card">
                             <div class="portfolio-image">
@@ -568,19 +697,148 @@
                             </div>
                         </div>
                     </div><!-- End Portfolio Item -->
-
                 </div><!-- End Portfolio Container -->
-
             </div>
-
         </div>
-
     </section><!-- /Portfolio Section -->
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section py-custom">
+        <!-- Section Title -->
+        <div class="container section-title content" data-aos="fade-up">
+            <h2>Galeria de Fotos</h2>
+            <!--<p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>-->
+        </div><!-- End Section Title -->
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+            <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+                <div class="row g-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
+                    <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-web">
+                        <div class="portfolio-card">
+                            <div class="portfolio-image">
+                                <img src="assets/img/img_insta1.jpg" class="img-fluid" alt="" loading="lazy">
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-actions">
+                                        <a href="assets/img/img_insta1.jpg" class="glightbox preview-link"
+                                            data-gallery="portfolio-gallery-web"><i class="bi bi-eye"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- End Portfolio Item -->
+                    <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-graphics">
+                        <div class="portfolio-card">
+                            <div class="portfolio-image">
+                                <img src="assets/img/img_insta2.jpg" class="img-fluid" alt="" loading="lazy">
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-actions">
+                                        <a href="assets/img/img_insta2.jpg" class="glightbox preview-link"
+                                            data-gallery="portfolio-gallery-graphics"><i class="bi bi-eye"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- End Portfolio Item -->
+                    <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-motion">
+                        <div class="portfolio-card">
+                            <div class="portfolio-image">
+                                <img src="assets/img/img_insta3.jpg" class="img-fluid" alt="" loading="lazy">
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-actions">
+                                        <a href="assets/img/img_insta3.jpg" class="glightbox preview-link"
+                                            data-gallery="portfolio-gallery-motion"><i class="bi bi-eye"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!--End Portfolio Item-->
+                    <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-brand">
+                        <div class="portfolio-card">
+                            <div class="portfolio-image">
+                                <img src="assets/img/img_insta4.jpg" class="img-fluid" alt="" loading="lazy">
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-actions">
+                                        <a href="assets/img/img_insta4.jpg" class="glightbox preview-link"
+                                            data-gallery="portfolio-gallery-brand"><i class="bi bi-eye"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- End Portfolio Item 
+                    </div><!-- End Portfolio Container -->
+                </div>
+            </div>
+    </section><!-- /Portfolio Section -->
+ <section class="newsletter-section">
+    <div class="container text-center">
+        <h2 class="mb-3">Inscreva-se na nossa Newsletter</h2>
+        <p class="mb-4">Receba atualizações e novidades diretamente no seu e-mail.</p>
 
-
+        <form class="row justify-content-center g-2">
+            <div class="col-md-6 col-sm-8">
+                <input type="email" class="form-control" placeholder="Digite seu e-mail" required>
+            </div>
+            <div class="col-auto">
+                <button type="submit" class="btn text-white">Inscrever</button>
+            </div>
+        </form>
+    </div>
+</section>
+    <footer id="footer" class="footer">
+        <div class="container footer-top">
+            <div class="row gy-4">
+                <div class="col-lg-5 col-md-12 footer-about">
+                    <a href="index.html" class="logo d-flex align-items-center">
+                        <span class="sitename">Strategy</span>
+                    </a>
+                    <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita
+                        valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+                    <div class="social-links d-flex mt-4">
+                        <a href=""><i class="bi bi-twitter-x"></i></a>
+                        <a href=""><i class="bi bi-facebook"></i></a>
+                        <a href=""><i class="bi bi-instagram"></i></a>
+                        <a href=""><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-6 footer-links">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Terms of service</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-6 footer-links">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="#">Web Design</a></li>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Product Management</a></li>
+                        <li><a href="#">Marketing</a></li>
+                        <li><a href="#">Graphic Design</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+                    <h4>Contact Us</h4>
+                    <p>A108 Adam Street</p>
+                    <p>New York, NY 535022</p>
+                    <p>United States</p>
+                    <p class="mt-4"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
+                    <p><strong>Email:</strong> <span>info@example.com</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="container copyright text-center mt-4">
+            <div class="credits">
+                Desenvolvido por <a href="https://github.com/SousaValentyna"><strong class="px-1 sitename color-primary">Valentyna </strong></a>© 2025
+            </div>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
