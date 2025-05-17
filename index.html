@@ -1,66 +1,28 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Liga Feminina de TI</title>
+    <link rel="shortcut icon" href="/assets/img/logo.png" type="image/x-icon">
+
+    <!-- Importação de fontes (caso necessário, adicione aqui) -->
+    <!-- Estilos e bibliotecas externas -->
+
+    <!-- Bootstrap CSS (biblioteca principal de layout e componentes responsivos) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+
+    <!-- Ícones do Bootstrap (ícones vetoriais prontos para uso) -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 
-
-    <link rel="stylesheet" href="/css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="/bootstrap.icons.css" rel="stylesheet">
-
+    <!-- Arquivos de estilo personalizados do projeto -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <!--<header id="header" class="header d-flex align-items-center fixed-top">
-        <div class="container position-relative d-flex align-items-center justify-content-between">
-
-            <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-                <!-- Uncomment the line below if you also wish to use an image logo -->
-                <!-- <img src="assets/img/logo.webp" alt="">
-                <h1 class="sitename">Invent</h1><span>.</span>
-            </a>
-
-            <nav id="navmenu" class="navmenu">
-                <ul>
-                    <li><a href="#hero" class="active">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#pricing">Pricing</a></li>
-                    <li><a href="#team">Team</a></li>
-                    <li class="dropdown"><a href="#"><span>Dropdown</span> <i
-                                class="bi bi-chevron-down toggle-dropdown"></i></a>
-                        <ul>
-                            <li><a href="#">Dropdown 1</a></li>
-                            <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i
-                                        class="bi bi-chevron-down toggle-dropdown"></i></a>
-                                <ul>
-                                    <li><a href="#">Deep Dropdown 1</a></li>
-                                    <li><a href="#">Deep Dropdown 2</a></li>
-                                    <li><a href="#">Deep Dropdown 3</a></li>
-                                    <li><a href="#">Deep Dropdown 4</a></li>
-                                    <li><a href="#">Deep Dropdown 5</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Dropdown 2</a></li>
-                            <li><a href="#">Dropdown 3</a></li>
-                            <li><a href="#">Dropdown 4</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-            </nav>
-
-            <a class="btn-getstarted" href="#about">Get Started</a>
-
-        </div>
-    </header>-->
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top bg-white shadow" data-bs-theme="bg-light">
         <div class="container d-flex align-items-center">
             <a class="navbar-brand d-flex align-items-center gap-2" href="#">
@@ -84,22 +46,22 @@
                         <a class="nav-link active fw-semibold" aria-current="page" href="#members">Integrantes</a>
                     </li>
                     <li class="nav-item dropdown mx-2">
-                        <a class="nav-link dropdown-toggle fw-semibold" href="#historia" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
+                        <a class="nav-link dropdown-toggle fw-semibold" href="#historia" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
                             Nossa História
                         </a>
                         <ul class="dropdown-menu mx-2">
-                            <li><a class="dropdown-item fw-semibold" href="#nossahistoria">História da Liga</a></li>
-                            <li><a class="dropdown-item fw-semibold" href="#missao">Nossa Missão</a></li>
+                            <li><a class="dropdown-item fw-semibold" href="#about-story">História da Liga</a></li>
+                            <li><a class="dropdown-item fw-semibold" href="#about-mission">Nossa Missão</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item fw-semibold" href="#visao">Nossa Visão</a></li>
-                            <li><a class="dropdown-item fw-semibold" href="#valores">Nossos Valores</a></li>
+                            <li><a class="dropdown-item fw-semibold" href="#about-vision">Nossa Visão</a></li>
+                            <li><a class="dropdown-item fw-semibold" href="#about-values">Nossos Valores</a></li>
                         </ul>
                     </li>
                     <li class="nav-item mx-2">
-                        <a class="nav-link fw-semibold" href="#processo">Processo seletivo</a>
+                        <a class="nav-link fw-semibold" href="#process">Processo seletivo</a>
                     </li>
                     <li class="nav-item mx-2">
                         <a class="nav-link disabled fw-semibold" aria-disabled="true">Disabled</a>
@@ -111,7 +73,7 @@
                 Receba novidades
             </button>
         </div>
-    </nav>
+    </nav> <!-- Fim da Navbar -->
     <!-- Modal -->
     <div class="modal fade" id="newsletterModal" tabindex="-1" aria-labelledby="newsletterModalLabel"
         aria-hidden="true">
@@ -140,7 +102,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> <!-- Fim da Modal -->
     <section id="home" class="bg-color py-custom d-flex flex-column justify-content-center">
         <div class="container">
             <div class="row align-items-center index-details">
@@ -156,9 +118,10 @@
             </div>
         </div>
     </section>
-    <!-- About Section ----------------------------------------------------------------- -->
-    <section class="our-story-bg py-custom">
-        <section id="nossahistoria" class="about section pt-4">
+    <!-- About Section  -->
+    <section class="bg-about py-custom">
+        <!-- section about-story -->
+        <section id="about-story" class="about section pt-4">
             <div class="container content">
                 <h2>Nossa História</h2>
                 <div class="row gy-4">
@@ -186,25 +149,19 @@
                                     <div class="col-lg-12 details">
                                         <img src="assets/img/img_insta4.jpg" class="img-fluid" alt="">
                                     </div>
-                                    <!--<div class="col-lg-12 details">
-                                        <img src="assets/img/img_insta3.jpg" class="img-fluid" alt="">
-                                    </div>-->
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section><!-- /About Section -->
-        <!-- About Section -->
-        <section id="missao" class="about section pt-5">
+        </section>
+        <!-- section about-mission -->
+        <section id="about-mission" class="about section pt-5">
             <div class="container">
                 <div class="row gy-4">
                     <div class="col-lg-6 about-images" data-aos="fade-up" data-aos-delay="200">
                         <div class="row gy-4">
-                            <!--<div class="col-lg-6">
-                                <img src="assets/img/IsabelValentim.jpeg" class="img-fluid" alt="">
-                            </div>-->
                             <div class="col-lg-6">
                                 <div class="row gy-4">
                                     <div class="col-lg-12">
@@ -225,7 +182,7 @@
                 </div>
             </div>
         </section><!-- /About Section -->
-        <section id="visao" class="about section pt-5">
+        <section id="about-vision" class="about section pt-5">
             <div class="container">
                 <div class="row gy-4">
                     <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
@@ -236,17 +193,15 @@
                     </div>
                     <div class="col-lg-6 about-images" data-aos="fade-up" data-aos-delay="200">
                         <div class="row gy-4">
-                            <!--<div class="col-lg-6">
-                                <img src="assets/img/robot.png" class="img-fluid" alt="">
-                            </div>-->
                             <div class="col-lg-6">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section><!-- /About Section -->
-        <section id="valores" class="about section pt-5">
+        </section>
+        <!-- section about-values -->
+        <section id="about-values" class="about section pt-5">
             <div class="container">
                 <div class="row gy-4">
                     <div class="col-lg-6 about-images" data-aos="fade-up" data-aos-delay="200">
@@ -276,72 +231,13 @@
                     </div>
                 </div>
             </div>
-        </section><!-- /About Section -->
+        </section>
     </section>
-    <!--<section class="our-story-bg py-custom">
-        <div class="container">
-            <h2 class="text-center fw-medium mb-custom fs-2">Nossa História</h2>
-
-            <!-- Missão -
-            <div class="row align-items-stretch">
-                <div class="col-md-6 mb-4 mb-md-0 text-center">
-                    <img src="./assets/img/circuit.png" alt="circuit" class="img-fluid">
-                </div>
-                <div class="col-md-6 d-flex flex-column justify-content-end">
-                    <h2 class="fw-medium fs-3 mb-3">Nossa missão</h2>
-                    <p class="texto-descricao">
-                        Estimular o crescimento profissional das mulheres em TI por meio de aprendizagem baseada em
-                        projetos que atendam às necessidades do mercado, capacitar com mentorias, treinamentos, pesquisa
-                        e extensão e fomentar oportunidades de carreira e networking para promover o desenvolvimento de
-                        lideranças femininas inovadoras, capazes de enriquecer e diversificar o setor.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Visão 
-            <div class="row align-items-center py-5 flex-md-row-reverse">
-                <div class="col-md-6 mb-4 mb-md-0 text-center">
-                    <img src="./assets/img/robot.png" alt="robot" class="img-fluid" style="max-height: 300px;">
-                </div>
-                <div class="col-md-6">
-                    <h2 class="fw-medium fs-3 mb-3">Nossa visão</h2>
-                    <p class="texto-descricao">
-                        Ser reconhecida no estado como referência na área de tecnologia por impulsionar a diversidade e
-                        a inovação.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Valores 
-            <div class="row py-5">
-                <div class="col-12">
-                    <h2 class="fw-medium fs-3 mb-3">Nossos valores</h2>
-                    <p class="texto-descricao">
-                        <strong>Inclusão e Diversidade:</strong> Valorizamos a criação de um ambiente onde todas as
-                        mulheres, independentemente de sua origem, experiência ou identidade, se sintam acolhidas,
-                        respeitadas e tenham igualdade de oportunidades.<br>
-                        <strong>Capacitação:</strong> Comprometemo-nos a empoderar nossas membras, oferecendo as
-                        ferramentas e o conhecimento necessários para seu crescimento pessoal e profissional.<br>
-                        <strong>Colaboração:</strong> Acreditamos na força da comunidade e no poder da colaboração para
-                        alcançar objetivos comuns e promover mudanças significativas.<br>
-                        <strong>Inovação e Criatividade:</strong> Incentivamos a inovação e a criatividade, buscando
-                        sempre soluções inovadoras e eficazes para os desafios enfrentados pelo mercado.<br>
-                        <strong>Excelência e Qualidade:</strong> Nos dedicamos a manter os mais altos padrões de
-                        qualidade em todas as nossas atividades, programas e projetos.<br>
-                        <strong>Ética e Integridade:</strong> Agimos com ética, integridade e transparência em todas as
-                        nossas ações, mantendo um compromisso firme com nossos princípios.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>-->
-    <!-- How We Work Section -->
-    <section id="processo" class="how-we-work section">
-        <!-- Section Title -->
+    <!-- Section selection process -->
+    <section id="process" class="process-selection section">
         <div class="container section-title content" data-aos="fade-up">
             <h2>Processo Seletivo</h2>
-            <!--<p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>-->
-        </div><!-- End Section Title -->
+        </div>
         <div class="container" data-aos="fade-up" data-aos-delay="100">
             <div class="steps-5">
                 <div class="process-container">
@@ -358,7 +254,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div><!-- End Process Item -->
+                    </div>
                     <div class="process-item" data-aos="fade-up" data-aos-delay="300">
                         <div class="content">
                             <span class="step-number">02</span>
@@ -375,7 +271,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div><!-- End Process Item -->
+                    </div>
                     <div class="process-item" data-aos="fade-up" data-aos-delay="400">
                         <div class="content">
                             <span class="step-number">03</span>
@@ -391,27 +287,27 @@
                                 </div>
                             </div>
                         </div>
-                    </div><!-- End Process Item -->
+                    </div>
                 </div>
             </div>
         </div>
-    </section><!-- /How We Work Section -->
-    <section id="members" class="team section light-background py-custom">
-        <!-- Section Title -->
+    </section>
+    <!-- Section Members-->
+    <section id="members" class="member section light-background py-custom">
         <div class="container section-title content" data-aos="fade-up">
             <h2>Nossas Integrantes</h2>
-            <!--<p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>-->
-        </div><!-- End Section Title -->
+        </div>
         <div class="container" data-aos="fade-up" data-aos-delay="100">
             <div class="row g-5">
+                <!-- Card Member -->
                 <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="team-card">
-                        <div class="team-image">
+                    <div class="member-card">
+                        <div class="member-image">
                             <img src="assets/img/IsabelValentim.jpeg" class="img-fluid" alt="">
-                            <div class="team-overlay">
+                            <div class="member-overlay">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate
                                     eu pharetra nec, mattis ac neque.</p>
-                                <div class="team-social">
+                                <div class="member-social">
                                     <a href=""><i class="bi bi-twitter-x"></i></a>
                                     <a href=""><i class="bi bi-facebook"></i></a>
                                     <a href=""><i class="bi bi-instagram"></i></a>
@@ -419,20 +315,21 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="team-content">
+                        <div class="member-content">
                             <h4>Isabel Valentim</h4>
                             <span class="position">Ciência da Computação</span>
                         </div>
                     </div>
-                </div><!-- End Team Member -->
+                </div>
+                <!-- Card Member -->
                 <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="team-card">
-                        <div class="team-image">
+                    <div class="member-card">
+                        <div class="member-image">
                             <img src="assets/img/mariaFiorio.jpeg" class="img-fluid" alt="">
-                            <div class="team-overlay">
+                            <div class="member-overlay">
                                 <p>Aliquam tincidunt mauris eu risus. Vestibulum auctor dapibus neque. Nunc dignissim
                                     risus id metus.</p>
-                                <div class="team-social">
+                                <div class="member-social">
                                     <a href=""><i class="bi bi-twitter-x"></i></a>
                                     <a href=""><i class="bi bi-facebook"></i></a>
                                     <a href=""><i class="bi bi-instagram"></i></a>
@@ -440,20 +337,21 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="team-content">
+                        <div class="member-content">
                             <h4>Maria Eduarda Fiorio</h4>
                             <span class="position">Ciência da Computação</span>
                         </div>
                     </div>
-                </div><!-- End Team Member -->
+                </div>
+                <!-- Card Member -->
                 <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="300">
-                    <div class="team-card">
-                        <div class="team-image">
+                    <div class="member-card">
+                        <div class="member-image">
                             <img src="assets/img/Nikelly.jpeg" class="img-fluid" alt="">
-                            <div class="team-overlay">
+                            <div class="member-overlay">
                                 <p>Cras ornare tristique elit. Integer in dui quis est placerat ornare. Phasellus a
                                     lacus a risus.</p>
-                                <div class="team-social">
+                                <div class="member-social">
                                     <a href=""><i class="bi bi-twitter-x"></i></a>
                                     <a href=""><i class="bi bi-facebook"></i></a>
                                     <a href=""><i class="bi bi-instagram"></i></a>
@@ -461,20 +359,21 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="team-content">
+                        <div class="member-content">
                             <h4>Nikelly S J Thomaz</h4>
                             <span class="position">Ciência da Computação</span>
                         </div>
                     </div>
-                </div><!-- End Team Member -->
+                </div>
+                <!-- Card Member -->
                 <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="400">
-                    <div class="team-card">
-                        <div class="team-image">
+                    <div class="member-card">
+                        <div class="member-image">
                             <img src="assets/img/MarcelaSantos.jpeg" class="img-fluid" alt="">
-                            <div class="team-overlay">
+                            <div class="member-overlay">
                                 <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
                                     egestas.</p>
-                                <div class="team-social">
+                                <div class="member-social">
                                     <a href=""><i class="bi bi-twitter-x"></i></a>
                                     <a href=""><i class="bi bi-facebook"></i></a>
                                     <a href=""><i class="bi bi-instagram"></i></a>
@@ -482,20 +381,21 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="team-content">
+                        <div class="member-content">
                             <h4>Marcela R dos Santos</h4>
                             <span class="position">Ciência da Computação</span>
                         </div>
                     </div>
-                </div><!-- End Team Member -->
+                </div>
+                <!-- Card Member -->
                 <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="400">
-                    <div class="team-card">
-                        <div class="team-image">
+                    <div class="member-card">
+                        <div class="member-image">
                             <img src="assets/img/laraMendes.jpeg" class="img-fluid" alt="">
-                            <div class="team-overlay">
+                            <div class="member-overlay">
                                 <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
                                     egestas.</p>
-                                <div class="team-social">
+                                <div class="member-social">
                                     <a href=""><i class="bi bi-twitter-x"></i></a>
                                     <a href=""><i class="bi bi-facebook"></i></a>
                                     <a href=""><i class="bi bi-instagram"></i></a>
@@ -503,20 +403,21 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="team-content">
+                        <div class="member-content">
                             <h4>Lara Mendes Valin</h4>
                             <span class="position">Ciência da Computação</span>
                         </div>
                     </div>
                 </div>
+                <!-- Card Member -->
                 <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="400">
-                    <div class="team-card">
-                        <div class="team-image">
+                    <div class="member-card">
+                        <div class="member-image">
                             <img src="assets/img/suellen.jpeg" class="img-fluid" alt="">
-                            <div class="team-overlay">
+                            <div class="member-overlay">
                                 <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
                                     egestas.</p>
-                                <div class="team-social">
+                                <div class="member-social">
                                     <a href=""><i class="bi bi-twitter-x"></i></a>
                                     <a href=""><i class="bi bi-facebook"></i></a>
                                     <a href=""><i class="bi bi-instagram"></i></a>
@@ -524,20 +425,21 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="team-content">
+                        <div class="member-content">
                             <h4>Suellen Miranda Amorim</h4>
                             <span class="position">Ciência da Computação</span>
                         </div>
                     </div>
                 </div>
+                <!-- Card Member -->
                 <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="400">
-                    <div class="team-card">
-                        <div class="team-image">
+                    <div class="member-card">
+                        <div class="member-image">
                             <img src="assets/img/luanaTexeira.jpeg" class="img-fluid" alt="">
-                            <div class="team-overlay">
+                            <div class="member-overlay">
                                 <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
                                     egestas.</p>
-                                <div class="team-social">
+                                <div class="member-social">
                                     <a href=""><i class="bi bi-twitter-x"></i></a>
                                     <a href=""><i class="bi bi-facebook"></i></a>
                                     <a href=""><i class="bi bi-instagram"></i></a>
@@ -545,7 +447,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="team-content">
+                        <div class="member-content">
                             <h4>Luana Teixeira da Silva</h4>
                             <span class="position">Ciência da Computação</span>
                         </div>
@@ -554,31 +456,29 @@
             </div>
         </div>
     </section>
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section py-custom">
-        <!-- Section Title -->
+    <!-- Posts Section -->
+    <section id="post" class="post section py-custom">
         <div class="container section-title content" data-aos="fade-up">
             <h2>Postagens Recentes</h2>
-            <!--<p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>-->
-        </div><!-- End Section Title -->
+        </div>
         <div class="container" data-aos="fade-up" data-aos-delay="100">
             <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
                 <div class="row g-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
-
-                    <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-web">
-                        <div class="portfolio-card">
-                            <div class="portfolio-image">
+                    <!-- Card post -->
+                    <div class="col-lg-6 col-md-6 post-item isotope-item filter-web">
+                        <div class="post-card">
+                            <div class="post-image">
                                 <img src="assets/img/futuras-cientistas.png" class="img-fluid" alt="" loading="lazy">
-                                <div class="portfolio-overlay">
-                                    <div class="portfolio-actions">
+                                <div class="post-overlay">
+                                    <div class="post-actions">
                                         <a href="assets/img/futuras-cientistas.png" class="glightbox preview-link"
-                                            data-gallery="portfolio-gallery-web"><i class="bi bi-eye"></i></a>
+                                            data-gallery="post-gallery-web"><i class="bi bi-eye"></i></a>
                                         <a href="https://uvv.br/noticias/2024/09/liga-feminina-de-ti-e-aprovada-no-programa-futuras-cientistas-do-cnpq/"
                                             class="details-link" target="_blank"><i class="bi bi-arrow-right"></i></a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="portfolio-content">
+                            <div class="post-content">
                                 <a href="https://uvv.br/noticias/2024/09/liga-feminina-de-ti-e-aprovada-no-programa-futuras-cientistas-do-cnpq/"
                                     class="link-none" target="_blank">
                                     <h3>Liga feminina de TI é aprovada no programa Futuras Cientistas do CNPq</h3>
@@ -586,21 +486,22 @@
                                 </a>
                             </div>
                         </div>
-                    </div><!-- End Portfolio Item -->
-                    <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-graphics">
-                        <div class="portfolio-card">
-                            <div class="portfolio-image">
+                    </div>
+                    <!-- Card post -->
+                    <div class="col-lg-6 col-md-6 post-item isotope-item filter-graphics">
+                        <div class="post-card">
+                            <div class="post-image">
                                 <img src="assets/img/liganoticiauvv.jpeg" class="img-fluid" alt="" loading="lazy">
-                                <div class="portfolio-overlay">
-                                    <div class="portfolio-actions">
+                                <div class="post-overlay">
+                                    <div class="post-actions">
                                         <a href="assets/img/liganoticiauvv.jpeg" class="glightbox preview-link"
-                                            data-gallery="portfolio-gallery-graphics"><i class="bi bi-eye"></i></a>
+                                            data-gallery="post-gallery-graphics"><i class="bi bi-eye"></i></a>
                                         <a href="https://uvv.br/noticias/2025/03/alunas-de-tecnologia-da-uvv-representaram-o-es-no-campus-mobile-em-sao-paulo/"
                                             class="details-link" target="_blank"><i class="bi bi-arrow-right"></i></a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="portfolio-content">
+                            <div class="post-content">
                                 <a href="https://uvv.br/noticias/2025/03/alunas-de-tecnologia-da-uvv-representaram-o-es-no-campus-mobile-em-sao-paulo/"
                                     class="link-none" target="_blank">
                                     <h3>Alunas de tecnologia da UVV representaram o ES no Campus Mobile, em São Paulo
@@ -609,188 +510,107 @@
                                 </a>
                             </div>
                         </div>
-                    </div><!-- End Portfolio Item -->
-                    ,<!--<div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-motion">
-                        <div class="portfolio-card">
-                            <div class="portfolio-image">
-                                <img src="assets/img/portfolio/portfolio-7.webp" class="img-fluid" alt=""
-                                    loading="lazy">
-                                <div class="portfolio-overlay">
-                                    <div class="portfolio-actions">
-                                        <a href="assets/img/portfolio/portfolio-7.webp" class="glightbox preview-link"
-                                            data-gallery="portfolio-gallery-motion"><i class="bi bi-eye"></i></a>
-                                        <a href="portfolio-details.html" class="details-link"><i
-                                                class="bi bi-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="portfolio-content">
-                                <span class="category">Motion</span>
-                                <h3>Product Animation Reel</h3>
-                                <p>Donec ullamcorper nulla non metus auctor fringilla dapibus.</p>
-                            </div>
-                        </div>
-                    </div><!-- End Portfolio Item
-
-                    <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-brand">
-                        <div class="portfolio-card">
-                            <div class="portfolio-image">
-                                <img src="assets/img/portfolio/portfolio-4.webp" class="img-fluid" alt=""
-                                    loading="lazy">
-                                <div class="portfolio-overlay">
-                                    <div class="portfolio-actions">
-                                        <a href="assets/img/portfolio/portfolio-4.webp" class="glightbox preview-link"
-                                            data-gallery="portfolio-gallery-brand"><i class="bi bi-eye"></i></a>
-                                        <a href="portfolio-details.html" class="details-link"><i
-                                                class="bi bi-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="portfolio-content">
-                                <span class="category">Branding</span>
-                                <h3>Luxury Brand Package</h3>
-                                <p>Aenean lacinia bibendum nulla sed consectetur elit.</p>
-                            </div>
-                        </div>
-                    </div><!-- End Portfolio Item 
-
-                    <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-web">
-                        <div class="portfolio-card">
-                            <div class="portfolio-image">
-                                <img src="assets/img/portfolio/portfolio-2.webp" class="img-fluid" alt=""
-                                    loading="lazy">
-                                <div class="portfolio-overlay">
-                                    <div class="portfolio-actions">
-                                        <a href="assets/img/portfolio/portfolio-2.webp" class="glightbox preview-link"
-                                            data-gallery="portfolio-gallery-web"><i class="bi bi-eye"></i></a>
-                                        <a href="portfolio-details.html" class="details-link"><i
-                                                class="bi bi-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="portfolio-content">
-                                <span class="category">Web Design</span>
-                                <h3>E-commerce Platform</h3>
-                                <p>Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                            </div>
-                        </div>
-                    </div><!-- End Portfolio Item 
-
-                    <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-graphics">
-                        <div class="portfolio-card">
-                            <div class="portfolio-image">
-                                <img src="assets/img/portfolio/portfolio-11.webp" class="img-fluid" alt=""
-                                    loading="lazy">
-                                <div class="portfolio-overlay">
-                                    <div class="portfolio-actions">
-                                        <a href="assets/img/portfolio/portfolio-11.webp" class="glightbox preview-link"
-                                            data-gallery="portfolio-gallery-graphics"><i class="bi bi-eye"></i></a>
-                                        <a href="portfolio-details.html" class="details-link"><i
-                                                class="bi bi-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="portfolio-content">
-                                <span class="category">Graphics</span>
-                                <h3>Digital Art Collection</h3>
-                                <p>Cras mattis consectetur purus sit amet fermentum.</p>
-                            </div>
-                        </div>
-                    </div><!-- End Portfolio Item -->
-                </div><!-- End Portfolio Container -->
+                    </div>
+                </div><!-- End Post Container -->
             </div>
         </div>
-    </section><!-- /Portfolio Section -->
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section py-custom">
-        <!-- Section Title -->
+    </section><!-- /Posts Section -->
+    <!-- Gallery Section -->
+    <section id="post" class="post section py-custom">
         <div class="container section-title content" data-aos="fade-up">
             <h2>Galeria de Fotos</h2>
-            <!--<p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>-->
-        </div><!-- End Section Title -->
+        </div>
         <div class="container" data-aos="fade-up" data-aos-delay="100">
             <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
                 <div class="row g-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
-                    <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-web">
-                        <div class="portfolio-card">
-                            <div class="portfolio-image">
+                    <!-- Card Media -->
+                    <div class="col-lg-6 col-md-6 post-item isotope-item filter-web">
+                        <div class="post-card">
+                            <div class="post-image">
                                 <img src="assets/img/img_insta1.jpg" class="img-fluid" alt="" loading="lazy">
-                                <div class="portfolio-overlay">
-                                    <div class="portfolio-actions">
+                                <div class="post-overlay">
+                                    <div class="post-actions">
                                         <a href="assets/img/img_insta1.jpg" class="glightbox preview-link"
-                                            data-gallery="portfolio-gallery-web"><i class="bi bi-eye"></i></a>
+                                            data-gallery="post-gallery-web"><i class="bi bi-eye"></i></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div><!-- End Portfolio Item -->
-                    <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-graphics">
-                        <div class="portfolio-card">
-                            <div class="portfolio-image">
+                    </div>
+                    <!-- Card Media -->
+                    <div class="col-lg-6 col-md-6 post-item isotope-item filter-graphics">
+                        <div class="post-card">
+                            <div class="post-image">
                                 <img src="assets/img/img_insta2.jpg" class="img-fluid" alt="" loading="lazy">
-                                <div class="portfolio-overlay">
-                                    <div class="portfolio-actions">
+                                <div class="post-overlay">
+                                    <div class="post-actions">
                                         <a href="assets/img/img_insta2.jpg" class="glightbox preview-link"
-                                            data-gallery="portfolio-gallery-graphics"><i class="bi bi-eye"></i></a>
+                                            data-gallery="post-gallery-graphics"><i class="bi bi-eye"></i></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div><!-- End Portfolio Item -->
-                    <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-motion">
-                        <div class="portfolio-card">
-                            <div class="portfolio-image">
+                    </div>
+                    <!-- Card Media -->
+                    <div class="col-lg-6 col-md-6 post-item isotope-item filter-motion">
+                        <div class="post-card">
+                            <div class="post-image">
                                 <img src="assets/img/img_insta3.jpg" class="img-fluid" alt="" loading="lazy">
-                                <div class="portfolio-overlay">
-                                    <div class="portfolio-actions">
+                                <div class="post-overlay">
+                                    <div class="post-actions">
                                         <a href="assets/img/img_insta3.jpg" class="glightbox preview-link"
-                                            data-gallery="portfolio-gallery-motion"><i class="bi bi-eye"></i></a>
+                                            data-gallery="post-gallery-motion"><i class="bi bi-eye"></i></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div> <!--End Portfolio Item-->
-                    <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-brand">
-                        <div class="portfolio-card">
-                            <div class="portfolio-image">
+                    </div>
+                    <!-- Card Media -->
+                    <div class="col-lg-6 col-md-6 post-item isotope-item filter-brand">
+                        <div class="post-card">
+                            <div class="post-image">
                                 <img src="assets/img/img_insta4.jpg" class="img-fluid" alt="" loading="lazy">
-                                <div class="portfolio-overlay">
-                                    <div class="portfolio-actions">
+                                <div class="post-overlay">
+                                    <div class="post-actions">
                                         <a href="assets/img/img_insta4.jpg" class="glightbox preview-link"
-                                            data-gallery="portfolio-gallery-brand"><i class="bi bi-eye"></i></a>
+                                            data-gallery="post-gallery-brand"><i class="bi bi-eye"></i></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div><!-- End Portfolio Item 
-                    </div><!-- End Portfolio Container -->
+                    </div>
                 </div>
             </div>
-    </section><!-- /Portfolio Section -->
- <section class="newsletter-section">
-    <div class="container text-center">
-        <h2 class="mb-3">Inscreva-se na nossa Newsletter</h2>
-        <p class="mb-4">Receba atualizações e novidades diretamente no seu e-mail.</p>
+        </div>
+    </section><!-- /Gallery Section -->
+    <!-- Section Newsletter -->
+    <section class="newsletter-section">
+        <div class="container text-center">
+            <h2 class="mb-3">Inscreva-se na nossa Newsletter</h2>
+            <p class="mb-4">Receba atualizações e novidades diretamente no seu e-mail.</p>
 
-        <form class="row justify-content-center g-2">
-            <div class="col-md-6 col-sm-8">
-                <input type="email" class="form-control" placeholder="Digite seu e-mail" required>
-            </div>
-            <div class="col-auto">
-                <button type="submit" class="btn text-white">Inscrever</button>
-            </div>
-        </form>
-    </div>
-</section>
+            <form class="row justify-content-center g-2">
+                <div class="col-md-6 col-sm-8">
+                    <input type="email" class="form-control" placeholder="Digite seu e-mail" required>
+                </div>
+                <div class="col-auto">
+                    <button type="submit" class="btn text-white">Inscrever</button>
+                </div>
+            </form>
+        </div>
+    </section><!-- /Newsletter Section -->
+    <!-- Section Footer -->
     <footer id="footer" class="footer">
         <div class="container footer-top">
             <div class="row gy-4">
                 <div class="col-lg-5 col-md-12 footer-about">
                     <a href="index.html" class="logo d-flex align-items-center">
-                        <span class="sitename">Strategy</span>
+                        <img src="/assets/img/logocompleta.png" alt="Logo">
+                        <span class="sitename">LFTI</span>
                     </a>
-                    <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita
-                        valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+                    <p>Um movimento criado por alunas e profissionais para
+                        transformar o setor de tecnologia com mais diversidade,
+                        inclusão e liderança feminina.</p>
                     <div class="social-links d-flex mt-4">
                         <a href=""><i class="bi bi-twitter-x"></i></a>
                         <a href=""><i class="bi bi-facebook"></i></a>
@@ -799,46 +619,49 @@
                     </div>
                 </div>
                 <div class="col-lg-2 col-6 footer-links">
-                    <h4>Useful Links</h4>
+                    <h4>Links Úteis</h4>
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Terms of service</a></li>
-                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#nossahitoria">Sobre nós</a></li>
+                        <li><a href="#members">Integrantes</a></li>
+                        <li><a href="#processo">Processo Seletivo</a></li>
+                        <li><a href="#">Receba Novidades</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-2 col-6 footer-links">
-                    <h4>Our Services</h4>
+                    <h4>Projetos</h4>
                     <ul>
-                        <li><a href="#">Web Design</a></li>
-                        <li><a href="#">Web Development</a></li>
-                        <li><a href="#">Product Management</a></li>
-                        <li><a href="#">Marketing</a></li>
-                        <li><a href="#">Graphic Design</a></li>
+                        <li><a href="#">Futuras Cientistas</a></li>
+                        <li><a href="#">Futuras Cientistas</a></li>
+                        <li><a href="#">Futuras Cientistas</a></li>
+                        <li><a href="#">Futuras Cientistas</a></li>
+                        <li><a href="#">Futuras Cientistas</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-                    <h4>Contact Us</h4>
-                    <p>A108 Adam Street</p>
-                    <p>New York, NY 535022</p>
-                    <p>United States</p>
-                    <p class="mt-4"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-                    <p><strong>Email:</strong> <span>info@example.com</span></p>
+                    <h4>Contate-nos</h4>
+                    <p>Av. Comissário José Dantas de Melo, n 21.</p>
+                    <p>Boa Vista -Vila Velha ES.</p>
+                    <p>CEP 29102-920.</p>
+                    <p class="mt-4"><strong>Telefone:</strong> <span>(27) 99999-9999</span></p>
+                    <p><strong>Email:</strong> <span>info@exemplo.com</span></p>
                 </div>
             </div>
         </div>
         <div class="container copyright text-center mt-4">
             <div class="credits">
-                Desenvolvido por <a href="https://github.com/SousaValentyna"><strong class="px-1 sitename color-primary">Valentyna </strong></a>© 2025
+                Desenvolvido por <a href="https://github.com/SousaValentyna" target="_blank"><strong
+                        class="px-1 sitename color-primary">Valentyna </strong></a>© 2025
             </div>
         </div>
-    </footer>
+    </footer><!-- /Footer Section -->
+
+    <!-- Bootstrap Bundle JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
-    <!-- Main JS File -->
+
+    <!-- Main Custom JS -->
     <script src="assets/js/main.js"></script>
 </body>
-
 </html>
