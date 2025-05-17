@@ -76,7 +76,7 @@
 # About Section
 --------------------------------------------------------------*/
 .bg-about {
-  background: url("/assets/img/backgraound1.png") no-repeat center center;
+  /*background: url("/assets/img/backgraound1.png") no-repeat center center;*/
 }
 
 .about .content .who-we-are {
