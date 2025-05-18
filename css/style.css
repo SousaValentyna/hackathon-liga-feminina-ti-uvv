@@ -15,6 +15,37 @@ a {
   border: none;
 }
 
+/* Botão scroll */
+#scrollTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  
+  border: none;
+  outline: none;
+  background-color: var(--default-color);
+  color: white;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+#scrollTopBtn:hover {
+  background-color: var(--details-color);
+}
+
+
+
 /* Header e navegacao */
 .logo-title1,
 .logo-title2 {
