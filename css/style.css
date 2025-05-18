@@ -79,27 +79,6 @@ a {
 # About Section
 --------------------------------------------------------------*/
 
-.bg-about {
-  position: relative;
-  z-index: 1;
-  padding: 40px;
-  overflow: hidden;
-}
-
-.bg-about::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: url('/assets/img/ilustracoes/frame.png') center center no-repeat;
-  opacity: 0.5; /* só o fundo ficará transparente */
-  z-index: 0;
-}
-
-.bg-about> * {
-  position: relative;
-  z-index: 1;
-}
-
 .about .content .who-we-are {
   text-transform: uppercase;
   margin-bottom: 15px;
@@ -210,7 +189,7 @@ a {
   content: "";
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: url('/assets/img/ilustracoes/frame.png') center center no-repeat;
+  background: url('/frame.png') center center no-repeat;
   opacity: 0.5; /* só o fundo ficará transparente */
   z-index: 0;
 }
