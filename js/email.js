@@ -2,7 +2,6 @@ import emailjs from 'https://cdn.jsdelivr.net/npm/@emailjs/browser@3.11.0/+esm';
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.7.3/firebase-app.js";
 import { getFirestore, collection, addDoc, query, where, getDocs } from "https://www.gstatic.com/firebasejs/11.7.3/firebase-firestore.js";
 
-// Config Firebase
 const firebaseConfig = {
     apiKey: "AIzaSyBssXIoX117ztXiHq7VXEjh0En14sphvhc",
     authDomain: "liga-feminina-ti.firebaseapp.com",
@@ -13,14 +12,11 @@ const firebaseConfig = {
     measurementId: "G-RMY041SX72"
 };
 
-// Inicializa Firebase e Firestore
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
-// Inicializa EmailJS
 emailjs.init('B4REthHplK_wi7bzv');
 
-// Elementos do formulário
 const form = document.getElementById('emailForm');
 const input = document.getElementById('emailInput');
 const mensagem = document.getElementById('mensagem');
@@ -30,7 +26,6 @@ form.addEventListener('submit', async (e) => {
 
     const email = input.value.trim();
 
-    // Validação básica de e-mail
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
         mensagem.textContent = "Por favor, digite um e-mail válido.";
         mensagem.style.color = "red";
@@ -38,7 +33,6 @@ form.addEventListener('submit', async (e) => {
     }
 
     try {
-        // Verifica se email já existe
         const emailsRef = collection(db, "emails");
         const q = query(emailsRef, where("email", "==", email));
         const querySnapshot = await getDocs(q);
@@ -49,13 +43,11 @@ form.addEventListener('submit', async (e) => {
             return;
         }
 
-        // Salva no Firestore
         await addDoc(collection(db, "emails"), {
             email: email,
             dataCadastro: new Date()
         });
 
-        // Envia e-mail via EmailJS
         await emailjs.send("service_e18qy6i", "template_f0c3c7d", {
             email: email,
             message: "Seu e-mail foi cadastrado com sucesso! Agora você não vai perder nenhuma das nossas novidades.",

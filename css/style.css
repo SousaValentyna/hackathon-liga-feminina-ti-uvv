@@ -1,38 +1,24 @@
-/* =================== */
-/* VARIÁVEIS GLOBAIS   */
-/* =================== */
 :root {
-  /* Cores globais */
-  --background-color: #ffffff;
-  --default-color: #26183b;
-  --heading-color: #32353a;
-  --accent-color: #8E59D9;
-  --surface-color: #ffffff;
-  --contrast-color: #ffffff;
+  --dark-purple-color: #26183b;
+  --grey-color: #32353a;
+  --dark-grey-color: #201E24;
+  --default-color: #8E59D9;
+  --white-color: #ffffff;
+  --details-white-color: #ffffff;
   --details-color: #C2FF73;
-
-  /* Cores específicas para navegação */
-  --nav-color: #3a3939;
   --nav-hover-color: #8E59D9;
-  --nav-mobile-background-color: #ffffff;
-  --nav-dropdown-background-color: #ffffff;
-  --nav-dropdown-color: #3a3939;
-  --nav-dropdown-hover-color: #8E59D9;
 }
 
 /* Reset */
-
 a {
   text-decoration: none;
   border: none;
 }
 
-/* =================== */
-/* HEADER & NAVEGAÇÃO  */
-/* =================== */
+/* Header e navegacao */
 .logo-title1,
 .logo-title2 {
-  color: #201E24;
+  color: var(--dark-grey-color);
   text-align: center;
   font-family: Poppins;
   font-style: normal;
@@ -71,20 +57,11 @@ a {
 
 @media (max-width: 767.98px) {
   #home {
-    padding-top: 6rem !important; /* ajuste conforme a altura do seu header */
+    padding-top: 6rem !important;
   }
 }
 
-/*--------------------------------------------------------------
-# About Section
---------------------------------------------------------------*/
-
-.about .content .who-we-are {
-  text-transform: uppercase;
-  margin-bottom: 15px;
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
-}
-
+/* About */
 .about .content h3 {
   font-size: 2rem;
   font-weight: 700;
@@ -109,42 +86,11 @@ a {
 .about .content ul i {
   font-size: 1.25rem;
   margin-right: 4px;
-  color: var(--accent-color);
+  color: var(--default-color);
 }
 
 .about .content p:last-child {
   margin-bottom: 0;
-}
-
-.about .content .read-more {
-  background: var(--accent-color);
-  color: var(--contrast-color);
-  font-family: var(--heading-font);
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 1px;
-  padding: 12px 24px;
-  border-radius: 5px;
-  transition: 0.3s;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.about .content .read-more i {
-  font-size: 18px;
-  margin-left: 5px;
-  line-height: 0;
-  transition: 0.3s;
-}
-
-.about .content .read-more:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 20%);
-  padding-right: 19px;
-}
-
-.about .content .read-more:hover i {
-  margin-left: 10px;
 }
 
 .about .about-images img {
@@ -152,8 +98,8 @@ a {
 }
 
 .about .destaque-span {
-  background: linear-gradient(145deg, color-mix(in srgb, var(--accent-color), transparent 95%), var(--surface-color));
-  border: 2px solid color-mix(in srgb, var(--accent-color), transparent 85%);
+  background: linear-gradient(145deg, color-mix(in srgb, var(--default-color), transparent 95%), var(--white-color));
+  border: 2px solid color-mix(in srgb, var(--default-color), transparent 85%);
   border-radius: 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -174,10 +120,7 @@ a {
   transition: transform 0.3s ease;
 }
 
-/*--------------------------------------------------------------
-# Selection Process Section
---------------------------------------------------------------*/
-
+/*Selection process */
 .bg-process {
   position: relative;
   z-index: 1;
@@ -220,8 +163,8 @@ a {
 .process-selection .process-item .content {
   width: 100%;
   position: relative;
-  background: linear-gradient(145deg, color-mix(in srgb, var(--accent-color), transparent 95%), var(--surface-color));
-  border: 2px solid color-mix(in srgb, var(--accent-color), transparent 85%);
+  background: linear-gradient(145deg, color-mix(in srgb, var(--default-color), transparent 95%), var(--white-color));
+  border: 2px solid color-mix(in srgb, var(--default-color), transparent 85%);
   border-radius: 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -232,7 +175,7 @@ a {
 }
 
 .process-selection .process-item .content:hover .step-icon {
-  background: linear-gradient(135deg, color-mix(in srgb, var(--accent-color), transparent 15%), var(--accent-color));
+  background: linear-gradient(135deg, color-mix(in srgb, var(--default-color), transparent 15%), var(--default-color));
   transform: rotate(10deg);
 }
 
@@ -248,7 +191,7 @@ a {
   transform: translateY(-50%);
   font-size: 4rem;
   font-weight: 800;
-  color: var(--accent-color);
+  color: var(--default-color);
   font-family: var(--heading-font);
   line-height: 1;
   opacity: 0.2;
@@ -266,17 +209,17 @@ a {
   flex-shrink: 0;
   width: 70px;
   height: 70px;
-  background-color: var(--accent-color);
+  background-color: var(--default-color);
   border-radius: 15px;
   display: grid;
   place-items: center;
   transition: all 0.3s ease;
-  box-shadow: 0 5px 15px color-mix(in srgb, var(--accent-color), transparent 70%);
+  box-shadow: 0 5px 15px color-mix(in srgb, var(--default-color), transparent 70%);
 }
 
 .process-selection .process-item .step-icon i {
   font-size: 2rem;
-  color: var(--contrast-color);
+  color: var(--details-white-color);
 }
 
 .process-selection .content h2 {
@@ -287,21 +230,21 @@ a {
 }
 
 .process-selection .process-item .step-content h3 {
-  color: var(--heading-color);
+  color: var(--grey-color);
   font-size: 1.5rem;
   margin-bottom: 0.75rem;
   font-weight: 600;
 }
 
 .process-selection .process-item .step-content p {
-  color: color-mix(in srgb, var(--default-color), transparent 25%);
+  color: color-mix(in srgb, var(--dark-purple-color), transparent 25%);
   font-size: 0.95rem;
   line-height: 1.6;
   margin: 0;
 }
 
 .process-selection .process-item .arrow {
-  color: color-mix(in srgb, var(--accent-color), transparent 50%);
+  color: color-mix(in srgb, var(--default-color), transparent 50%);
   margin: 1rem 0;
   width: 100px;
   height: 100px;
@@ -364,7 +307,6 @@ a {
   }
 }
 
-/* Estilos específicos para telas de até 512px de largura */
 @media (max-width: 512px) {
 
   .nav .button {
@@ -389,7 +331,7 @@ a {
   }
 
   .process-selection .process-item .step-number {
-    font-size: 2.5rem; /* levemente menor para telas muito estreitas */
+    font-size: 2.5rem;
     left: 50%;
     top: -1.25rem;
     transform: translateX(-50%);
@@ -427,13 +369,9 @@ a {
   }
 }
 
-
-/* =================== */
-/* Member Section      */
-/* =================== */
-
+/* Member */
 .member {
-  background-color: #f9f9ff;
+  background-color: var(--white-color);
 }
 
 .member .member-card {
@@ -441,7 +379,7 @@ a {
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
   position: relative;
-  background-color: var(--surface-color);
+  background-color: var(--white-color);
   transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   height: 100%;
 }
@@ -478,7 +416,7 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+  background: color-mix(in srgb, var(--default-color), transparent 20%);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -490,7 +428,7 @@ a {
 }
 
 .member .member-overlay p {
-  color: var(--contrast-color);
+  color: var(--details-white-color);
   text-align: center;
   margin-bottom: 1.5rem;
   font-size: 0.95rem;
@@ -510,18 +448,18 @@ a {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: var(--contrast-color);
-  color: var(--accent-color);
+  background: var(--details-white-color);
+  color: var(--default-color);
   font-size: 1rem;
   transform: translateY(20px);
   opacity: 0;
   transition: all 0.3s ease;
-  border: 1px solid color-mix(in srgb, var(--contrast-color), transparent 80%);
+  border: 1px solid color-mix(in srgb, var(--details-white-color), transparent 80%);
 }
 
 .member .member-social a:hover {
-  background: var(--accent-color);
-  color: var(--contrast-color);
+  background: var(--default-color);
+  color: var(--details-white-color);
 }
 
 .member .member-content {
@@ -538,10 +476,10 @@ a {
 .member .member-content .position {
   display: inline-block;
   padding: 0.35rem 1rem;
-  background-color: color-mix(in srgb, var(--accent-color), transparent 85%);
+  background-color: color-mix(in srgb, var(--default-color), transparent 85%);
   border-radius: 30px;
   font-size: 0.875rem;
-  color: var(--accent-color);
+  color: var(--default-color);
   font-weight: 500;
 }
 
@@ -555,9 +493,7 @@ a {
   }
 }
 
-/* =================== */
-/* POSTS & Gallery     */
-/* =================== */
+/* Post */
 .post .post-filters-container {
   margin-bottom: 40px;
 }
@@ -578,24 +514,24 @@ a {
   padding: 8px 20px;
   cursor: pointer;
   border-radius: 4px;
-  background-color: color-mix(in srgb, var(--surface-color), transparent 50%);
-  color: var(--default-color);
+  background-color: color-mix(in srgb, var(--white-color), transparent 50%);
+  color: var(--dark-purple-color);
   transition: all 0.3s ease-in-out;
 }
 
 .post .post-filters li:hover {
-  background-color: color-mix(in srgb, var(--accent-color), transparent 85%);
-  color: var(--accent-color);
+  background-color: color-mix(in srgb, var(--default-color), transparent 85%);
+  color: var(--default-color);
   transform: translateY(-2px);
 }
 
 .post .post-filters li.filter-active {
-  background-color: var(--accent-color);
-  color: var(--contrast-color);
+  background-color: var(--default-color);
+  color: var(--details-white-color);
 }
 
 .post .post-card {
-  background-color: var(--surface-color);
+  background-color: var(--white-color);
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
@@ -654,19 +590,19 @@ a {
 .post .post-card .post-overlay .post-actions a {
   width: 45px;
   height: 45px;
-  background-color: var(--surface-color);
+  background-color: var(--white-color);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--accent-color);
+  color: var(--default-color);
   font-size: 20px;
   transition: all 0.3s ease;
 }
 
 .post .post-card .post-overlay .post-actions a:hover {
-  background-color: var(--accent-color);
-  color: var(--contrast-color);
+  background-color: var(--default-color);
+  color: var(--details-white-color);
   transform: scale(1.1);
 }
 
@@ -676,7 +612,7 @@ a {
 
 .post .post-card .post-content .category {
   font-size: 14px;
-  color: var(--accent-color);
+  color: var(--default-color);
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 500;
@@ -692,12 +628,12 @@ a {
 }
 
 .post .post-card .post-content h3:hover {
-  color: var(--accent-color);
+  color: var(--default-color);
 }
 
 .post .post-card .post-content p {
   font-size: 15px;
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  color: color-mix(in srgb, var(--dark-purple-color), transparent 30%);
   margin: 0;
   line-height: 1.6;
 }
@@ -740,71 +676,7 @@ a {
   }
 }
 
-/* =================== */
-/* UTILITÁRIOS GERAIS  */
-/* =================== */
-
-.index-details {
-  height: 500px;
-}
-
-.color-primary {
-  color: var(--accent-color);
-}
-
-.color-secundary {
-  color: var(--details-color);
-}
-
-.btn-primarycolor {
-  color: #fff;
-  background-color: #8E59D9;
-  border-color: #8E59D9;
-}
-
-.btn-primarycolor:hover {
-  background-color: #733ebb;
-  border-color: #733ebb;
-  color: white;
-  transform: translateY(5px);
-  transition: all 0.2s ease-in-out;
-}
-
-.btn-primarycolor:focus,
-.btn-primarycolor.focus {
-  box-shadow: 0 0 0 0.2rem rgba(142, 89, 217, 0.5);
-  border-color: #733ebb;
-  color: white;
-}
-
-.bg-color {
-  background-color: #F3E9FB;
-}
-
-.py-custom {
-  padding-top: 5rem !important;
-  padding-bottom: 5rem !important;
-}
-
-.mb-custom {
-  margin-bottom: 4rem !important;
-}
-
-.hover-img:hover {
-  transform: translateX(10px);
-  border-radius: 20px;
-  transition: transform 0.3s ease;
-}
-
-.content h2 {
-  font-size: 2.2rem;
-  font-weight: 700;
-  padding-bottom: 6rem;
-  text-align: center;
-}
-
-/*-----------------------*/
-/*Newsletter -----------*/
+/* Newsletter */
 .newsletter-section {
   background-color: #f9f9ff;
   /* tom claro combinando com o roxo */
@@ -843,12 +715,10 @@ a {
   background-color: #7347b1;
 }
 
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
+/* Footer */
 .footer {
   color: white;
-  background-color: var(--default-color);
+  background-color: var(--dark-purple-color);
   font-size: 14px;
   padding-bottom: 50px;
   position: relative;
@@ -856,7 +726,7 @@ a {
 
 .footer .footer-top {
   padding-top: 50px;
-  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-top: 1px solid color-mix(in srgb, var(--dark-purple-color), transparent 90%);
 }
 
 .footer .footer-about .logo {
@@ -889,7 +759,7 @@ a {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 50%);
+  border: 1px solid color-mix(in srgb, var(--dark-purple-color), transparent 50%);
   font-size: 16px;
   color: color-mix(in srgb, white, transparent 50%);
   margin-right: 10px;
@@ -962,4 +832,64 @@ a {
   margin-top: 6px;
   font-size: 13px;
   color: white;
+}
+
+/* Utilitarios */
+.index-details {
+  height: 500px;
+}
+
+.color-primary {
+  color: var(--default-color);
+}
+
+.color-secundary {
+  color: var(--details-color);
+}
+
+.btn-primarycolor {
+  color: #fff;
+  background-color: #8E59D9;
+  border-color: #8E59D9;
+}
+
+.btn-primarycolor:hover {
+  background-color: #733ebb;
+  border-color: #733ebb;
+  color: white;
+  transform: translateY(5px);
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-primarycolor:focus,
+.btn-primarycolor.focus {
+  box-shadow: 0 0 0 0.2rem rgba(142, 89, 217, 0.5);
+  border-color: #733ebb;
+  color: white;
+}
+
+.bg-color {
+  background-color: #F3E9FB;
+}
+
+.py-custom {
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important;
+}
+
+.mb-custom {
+  margin-bottom: 4rem !important;
+}
+
+.hover-img:hover {
+  transform: translateX(10px);
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+.content h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  padding-bottom: 6rem;
+  text-align: center;
 }
