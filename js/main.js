@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    fetch('../data/integrantes.json')
+    fetch('data/integrantes.json')
       .then(response => response.json())
       .then(integrantes => {
         const container = document.getElementById('posts-container');
