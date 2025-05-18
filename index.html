@@ -5,14 +5,23 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Liga Feminina de TI</title>
-    <link rel="shortcut icon" href="/assets/img/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/assets/img/logo/logocompleta.png" type="image/x-icon">
 
     <!-- Importação de fontes (caso necessário, adicione aqui) -->
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <!-- Estilos e bibliotecas externas -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
     <!-- Bootstrap CSS (biblioteca principal de layout e componentes responsivos) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <!-- Swiper.js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
     <!-- Ícones do Bootstrap (ícones vetoriais prontos para uso) -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
@@ -26,7 +35,8 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top bg-white shadow" data-bs-theme="bg-light">
         <div class="container d-flex align-items-center">
             <a class="navbar-brand d-flex align-items-center gap-2" href="#">
-                <img src="/assets/img/logo.png" alt="Logo" width="40" height="50" class="d-inline-block align-text-top">
+                <img src="/assets/img/logo/logo.png" alt="Logo" width="40" height="50"
+                    class="d-inline-block align-text-top">
                 <div class="d-flex flex-column">
                     <span class="logo-title1">Liga Acadêmica Feminina</span>
                     <span class="logo-title2">de Tecnologia da Informação</span>
@@ -39,15 +49,15 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-center w-100">
-                    <li class="nav-item mx-2">
-                        <a class="nav-link active fw-semibold" aria-current="page" href="#home">Home</a>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link fw-semibold" aria-current="page" href="#home">Home</a>
                     </li>
-                    <li class="nav-item dropdown mx-2">
+                    <li class="nav-item dropdown mx-1">
                         <a class="nav-link dropdown-toggle fw-semibold" href="#historia" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Nossa História
                         </a>
-                        <ul class="dropdown-menu mx-2">
+                        <ul class="dropdown-menu mx-1">
                             <li><a class="dropdown-item fw-semibold" href="#about-story">História da Liga</a></li>
                             <li><a class="dropdown-item fw-semibold" href="#about-mission">Nossa Missão</a></li>
                             <li>
@@ -57,17 +67,17 @@
                             <li><a class="dropdown-item fw-semibold" href="#about-values">Nossos Valores</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item mx-2">
+                    <li class="nav-item mx-1">
                         <a class="nav-link fw-semibold" href="#process">Processo seletivo</a>
                     </li>
-                    <li class="nav-item mx-2">
-                        <a class="nav-link active fw-semibold" aria-current="page" href="#members">Integrantes</a>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link fw-semibold" aria-current="page" href="#members">Integrantes</a>
                     </li>
-                    <li class="nav-item mx-2">
-                        <a class="nav-link active fw-semibold" aria-current="page" href="#post">Posts</a>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link fw-semibold" aria-current="page" href="#post">Posts</a>
                     </li>
-                    <li class="nav-item mx-2">
-                        <a class="nav-link active fw-semibold" aria-current="page" href="#gallery">Galeria</a>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link fw-semibold" aria-current="page" href="#gallery">Galeria</a>
                     </li>
                 </ul>
             </div>
@@ -83,7 +93,7 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="newsletterModalLabel">Inscreva-se na nossa newsletter
+                    <h1 class="modal-title fs-5" id="newsletterModalLabel">Inscreva-se na nossa Newsletter
                     </h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
                 </div>
@@ -117,14 +127,14 @@
                     <a href="#" class="btn btn-primarycolor mt-3">Saiba Mais</a>
                 </div>
                 <div class="col-md-6 text-center index-details">
-                    <img src="./assets/img/img.png" alt="" class="img-fluid" style="max-height: 500px;">
+                    <img src="./assets/img/ilustracoes/ilustracao7.png" alt="" class="img-fluid hover-img"
+                        style="max-height: 500px;">
                 </div>
             </div>
         </div>
     </section>
     <!-- About Section -->
     <section class="bg-about py-custom">
-
         <!-- Nossa História -->
         <section id="about-story" class="about section pt-4">
             <div class="container content">
@@ -133,7 +143,7 @@
                     <!-- Texto da história -->
                     <div class="col-lg-6 content pe-5" data-aos="fade-up" data-aos-delay="100">
                         <h3>História da Liga Feminina de TI da UVV</h3>
-                        <span>
+                        <span class="destaque-span">
                             A Liga Feminina de TI da Universidade de Vila Velha (UVV) foi fundada em 2024 como um
                             projeto de extensão universitária sem fins lucrativos, idealizado por alunas dos cursos de
                             tecnologia da instituição e profissionais da área. Somos a primeira liga feminina de
@@ -151,10 +161,10 @@
                     <div class="col-lg-6 about-images" data-aos="fade-up" data-aos-delay="200">
                         <div class="row gy-4">
                             <div class="col-lg-6">
-                                <img src="assets/img/img_insta2.jpg" class="img-fluid" alt="">
+                                <img src="assets/img/galeria/img_insta4.jpg" class="img-fluid hover-img" alt="">
                             </div>
                             <div class="col-lg-6">
-                                <img src="assets/img/img_insta4.jpg" class="img-fluid" alt="">
+                                <img src="assets/img/galeria/img_insta5.jpg" class="img-fluid hover-img" alt="">
                             </div>
                         </div>
                     </div>
@@ -162,48 +172,84 @@
             </div>
         </section>
 
-        <!-- Nossa Missão e Visão -->
+        <!-- Nossa Missão -->
         <section id="about-mission" class="about section pt-5">
             <div class="container">
                 <div class="row gy-4">
-                    <div class="col-lg-6 about-images" data-aos="fade-up" data-aos-delay="200">
-                        <div class="row gy-4">
-                            <!-- Missão -->
-                            <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
-                                <h3>Nossa Missão</h3>
-                                <span>
-                                    Estimular o crescimento profissional das mulheres em TI por meio de aprendizagem
-                                    baseada
-                                    em projetos que atendam às necessidades do mercado, capacitar com mentorias,
-                                    treinamentos, pesquisa e extensão e fomentar oportunidades de carreira e networking
-                                    para
-                                    promover o desenvolvimento de lideranças femininas inovadoras, capazes de enriquecer
-                                    e
-                                    diversificar o setor.
-                                </span>
-                            </div>
+                    <div class="row gy-4">
+                        <!-- Missão -->
 
-                            <!-- Visão -->
-                            <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
-                                <h3>Nossa Visão</h3>
-                                <span>
-                                    Ser reconhecida no estado como referência na área de tecnologia por impulsionar a
-                                    diversidade e a inovação.
-                                </span>
+                        <div class="col-lg-6 about-images" data-aos="fade-up" data-aos-delay="100">
+                            <div class="row gy-4">
+                                <div class="col-lg-6">
+                                    <img src="assets/img/ilustracoes/ilustracao1.png" class="img-fluid hover-img"
+                                        alt="">
+                                </div>
+                                <!--<div class="col-lg-6">
+                                        <img src="assets/img/ilustracoes/ilustracao3.png" class="img-fluid" alt="">
+                                    </div>-->
                             </div>
+                        </div>
+                        <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
+                            <h3>Nossa Missão</h3>
+                            <span class="destaque-span">
+                                Estimular o crescimento profissional das mulheres em TI por meio de aprendizagem
+                                baseada
+                                em projetos que atendam às necessidades do mercado, capacitar com mentorias,
+                                treinamentos, pesquisa e extensão e fomentar oportunidades de carreira e networking
+                                para
+                                promover o desenvolvimento de lideranças femininas inovadoras, capazes de enriquecer
+                                e
+                                diversificar o setor.
+                            </span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <section id="about-vision" class="about section pt-5">
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-lg-6 content pe-5" data-aos="fade-up" data-aos-delay="100">
+                        <h3>Nossa Visão</h3>
+                        <span class="destaque-span">
+                            Ser reconhecida no estado como referência na área de tecnologia por impulsionar a
+                            diversidade e a inovação.
+                        </span>
+                    </div>
+                    <div class="col-lg-6 about-images" data-aos="fade-up" data-aos-delay="200">
+                        <div class="row gy-4">
+                            <div class="col-lg-6">
+                                <img src="assets/img/ilustracoes/ilustracao3.png" class="img-fluid hover-img" alt="">
+                            </div>
+                            <!--<div class="col-lg-6">
+                                    <img src="assets/img/img_insta4.jpg" class="img-fluid" alt="">
+                                </div>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Nossos Valores -->
         <section id="about-values" class="about section pt-5">
             <div class="container">
                 <div class="row gy-4">
                     <!-- Texto dos valores -->
+                    <!-- Imagens dos valores -->
+                    <div class="col-lg-6 about-images" data-aos="fade-up" data-aos-delay="200">
+                        <div class="row gy-4">
+                            <div class="col-lg-12">
+                                <img src="assets/img/ilustracoes/ilustracao5.png" class="img-fluid hover-img" alt="">
+                            </div>
+                            <!--<div class="col-lg-6">
+                                <img src="assets/img/img_insta4.jpg" class="img-fluid" alt="">
+                            </div>-->
+                        </div>
+                    </div>
                     <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
                         <h3>Nossos Valores</h3>
-                        <span>
+                        <span class="destaque-span">
                             <strong>Inclusão e Diversidade:</strong> Valorizamos a criação de um ambiente onde todas as
                             mulheres,
                             independentemente de sua origem, experiência ou identidade, se sintam acolhidas, respeitadas
@@ -230,17 +276,6 @@
                             mantendo um compromisso firme com nossos princípios.
                         </span>
                     </div>
-                    <!-- Imagens dos valores -->
-                    <div class="col-lg-6 about-images" data-aos="fade-up" data-aos-delay="200">
-                        <div class="row gy-4">
-                            <div class="col-lg-6">
-                                <img src="assets/img/img_insta3.jpg" class="img-fluid" alt="">
-                            </div>
-                            <div class="col-lg-6">
-                                <!-- Espaço para futura imagem ou conteúdo -->
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
@@ -249,7 +284,7 @@
     <!-- /About Section -->
 
     <!-- Section selection process -->
-    <section id="process" class="process-selection section">
+    <section id="process" class="process-selection section py-custom">
         <div class="container section-title content" data-aos="fade-up">
             <h2>Processo Seletivo</h2>
         </div>
@@ -318,15 +353,14 @@
                 <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="100">
                     <div class="member-card">
                         <div class="member-image">
-                            <img src="assets/img/IsabelValentim.jpeg" class="img-fluid" alt="">
+                            <img src="assets/img/integrantes/IsabelValentim.jpeg" class="img-fluid" alt="">
                             <div class="member-overlay">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate
                                     eu pharetra nec, mattis ac neque.</p>
                                 <div class="member-social">
-                                    <a href=""><i class="bi bi-twitter-x"></i></a>
-                                    <a href=""><i class="bi bi-facebook"></i></a>
                                     <a href=""><i class="bi bi-instagram"></i></a>
-                                    <a href=""><i class="bi bi-linkedin"></i></a>
+                                    <a href="https://www.linkedin.com/in/isabel-valentim-25b8581a2/" target="_blank"><i
+                                            class="bi bi-linkedin"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -340,15 +374,14 @@
                 <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="200">
                     <div class="member-card">
                         <div class="member-image">
-                            <img src="assets/img/mariaFiorio.jpeg" class="img-fluid" alt="">
+                            <img src="assets/img/integrantes/mariaFiorio.jpeg" class="img-fluid" alt="">
                             <div class="member-overlay">
                                 <p>Aliquam tincidunt mauris eu risus. Vestibulum auctor dapibus neque. Nunc dignissim
                                     risus id metus.</p>
                                 <div class="member-social">
-                                    <a href=""><i class="bi bi-twitter-x"></i></a>
-                                    <a href=""><i class="bi bi-facebook"></i></a>
-                                    <a href=""><i class="bi bi-instagram"></i></a>
-                                    <a href=""><i class="bi bi-linkedin"></i></a>
+                                    <a href="" target="_blank"><i class="bi bi-instagram"></i></a>
+                                    <a href="https://www.linkedin.com/in/maria-fiorio-84764217b/" target="_blank"><i
+                                            class="bi bi-linkedin"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -362,15 +395,14 @@
                 <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="300">
                     <div class="member-card">
                         <div class="member-image">
-                            <img src="assets/img/Nikelly.jpeg" class="img-fluid" alt="">
+                            <img src="assets/img/integrantes/Nikelly.jpeg" class="img-fluid" alt="">
                             <div class="member-overlay">
                                 <p>Cras ornare tristique elit. Integer in dui quis est placerat ornare. Phasellus a
                                     lacus a risus.</p>
                                 <div class="member-social">
-                                    <a href=""><i class="bi bi-twitter-x"></i></a>
-                                    <a href=""><i class="bi bi-facebook"></i></a>
                                     <a href=""><i class="bi bi-instagram"></i></a>
-                                    <a href=""><i class="bi bi-linkedin"></i></a>
+                                    <a href="https://www.linkedin.com/in/nikelly-s-j-thomaz-935b2024a/"
+                                        target="_blank"><i class="bi bi-linkedin"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -384,15 +416,14 @@
                 <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="400">
                     <div class="member-card">
                         <div class="member-image">
-                            <img src="assets/img/MarcelaSantos.jpeg" class="img-fluid" alt="">
+                            <img src="assets/img/integrantes/MarcelaSantos.jpeg" class="img-fluid" alt="">
                             <div class="member-overlay">
                                 <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
                                     egestas.</p>
                                 <div class="member-social">
-                                    <a href=""><i class="bi bi-twitter-x"></i></a>
-                                    <a href=""><i class="bi bi-facebook"></i></a>
                                     <a href=""><i class="bi bi-instagram"></i></a>
-                                    <a href=""><i class="bi bi-linkedin"></i></a>
+                                    <a href="https://www.linkedin.com/in/marcela-r-santos/" target="_blank"><i
+                                            class="bi bi-linkedin"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -406,15 +437,14 @@
                 <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="400">
                     <div class="member-card">
                         <div class="member-image">
-                            <img src="assets/img/laraMendes.jpeg" class="img-fluid" alt="">
+                            <img src="assets/img/integrantes/laraMendes.jpeg" class="img-fluid" alt="">
                             <div class="member-overlay">
                                 <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
                                     egestas.</p>
                                 <div class="member-social">
-                                    <a href=""><i class="bi bi-twitter-x"></i></a>
-                                    <a href=""><i class="bi bi-facebook"></i></a>
                                     <a href=""><i class="bi bi-instagram"></i></a>
-                                    <a href=""><i class="bi bi-linkedin"></i></a>
+                                    <a href="https://www.linkedin.com/in/lara-mendes-valin-492435151/"
+                                        target="_blank"><i class="bi bi-linkedin"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -428,15 +458,14 @@
                 <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="400">
                     <div class="member-card">
                         <div class="member-image">
-                            <img src="assets/img/suellen.jpeg" class="img-fluid" alt="">
+                            <img src="assets/img/integrantes/suellen.jpeg" class="img-fluid" alt="">
                             <div class="member-overlay">
                                 <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
                                     egestas.</p>
                                 <div class="member-social">
-                                    <a href=""><i class="bi bi-twitter-x"></i></a>
-                                    <a href=""><i class="bi bi-facebook"></i></a>
                                     <a href=""><i class="bi bi-instagram"></i></a>
-                                    <a href=""><i class="bi bi-linkedin"></i></a>
+                                    <a href="https://www.linkedin.com/in/suellenmiranda/" target="_blank"><i
+                                            class="bi bi-linkedin"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -450,15 +479,35 @@
                 <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="400">
                     <div class="member-card">
                         <div class="member-image">
-                            <img src="assets/img/luanaTexeira.jpeg" class="img-fluid" alt="">
+                            <img src="assets/img/integrantes/luanaTexeira.jpeg" class="img-fluid" alt="">
                             <div class="member-overlay">
                                 <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
                                     egestas.</p>
                                 <div class="member-social">
-                                    <a href=""><i class="bi bi-twitter-x"></i></a>
-                                    <a href=""><i class="bi bi-facebook"></i></a>
                                     <a href=""><i class="bi bi-instagram"></i></a>
-                                    <a href=""><i class="bi bi-linkedin"></i></a>
+                                    <a href="https://www.linkedin.com/in/luanatxds/" target="_blank"><i
+                                            class="bi bi-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="member-content">
+                            <h4>Luana Teixeira da Silva</h4>
+                            <span class="position">Ciência da Computação</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card Member -->
+                <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="member-card">
+                        <div class="member-image">
+                            <img src="assets/img/integrantes/Nikelly.jpeg" class="img-fluid" alt="">
+                            <div class="member-overlay">
+                                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                                    egestas.</p>
+                                <div class="member-social">
+                                    <a href=""><i class="bi bi-instagram"></i></a>
+                                    <a href="https://www.linkedin.com/in/nikelly-s-j-thomaz-935b2024a/"
+                                        target="_blank"><i class="bi bi-linkedin"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -483,11 +532,13 @@
                     <div class="col-lg-6 col-md-6 post-item isotope-item filter-web">
                         <div class="post-card">
                             <div class="post-image">
-                                <img src="assets/img/futuras-cientistas.png" class="img-fluid" alt="" loading="lazy">
+                                <img src="assets/img/postagens/futuras-cientistas.png" class="img-fluid" alt=""
+                                    loading="lazy">
                                 <div class="post-overlay">
                                     <div class="post-actions">
-                                        <a href="assets/img/futuras-cientistas.png" class="glightbox preview-link"
-                                            data-gallery="post-gallery-web"><i class="bi bi-eye"></i></a>
+                                        <a href="assets/img/postagens/futuras-cientistas.png"
+                                            class="glightbox preview-link" data-gallery="post-gallery-web"><i
+                                                class="bi bi-eye"></i></a>
                                         <a href="https://uvv.br/noticias/2024/09/liga-feminina-de-ti-e-aprovada-no-programa-futuras-cientistas-do-cnpq/"
                                             class="details-link" target="_blank"><i class="bi bi-arrow-right"></i></a>
                                     </div>
@@ -506,11 +557,13 @@
                     <div class="col-lg-6 col-md-6 post-item isotope-item filter-graphics">
                         <div class="post-card">
                             <div class="post-image">
-                                <img src="assets/img/liganoticiauvv.jpeg" class="img-fluid" alt="" loading="lazy">
+                                <img src="assets/img/postagens/liganoticiauvv.jpeg" class="img-fluid" alt=""
+                                    loading="lazy">
                                 <div class="post-overlay">
                                     <div class="post-actions">
-                                        <a href="assets/img/liganoticiauvv.jpeg" class="glightbox preview-link"
-                                            data-gallery="post-gallery-graphics"><i class="bi bi-eye"></i></a>
+                                        <a href="assets/img/postagens/liganoticiauvv.jpeg"
+                                            class="glightbox preview-link" data-gallery="post-gallery-graphics"><i
+                                                class="bi bi-eye"></i></a>
                                         <a href="https://uvv.br/noticias/2025/03/alunas-de-tecnologia-da-uvv-representaram-o-es-no-campus-mobile-em-sao-paulo/"
                                             class="details-link" target="_blank"><i class="bi bi-arrow-right"></i></a>
                                     </div>
@@ -533,86 +586,215 @@
     <!-- Gallery Section -->
     <section id="gallery" class="post section py-custom">
         <div class="container section-title content" data-aos="fade-up">
-            <h2>Galeria de Fotos</h2>
+            <h2>Galeria de Fotos e Vídeos</h2>
         </div>
         <div class="container" data-aos="fade-up" data-aos-delay="100">
             <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-                <div class="row g-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
-                    <!-- Card Media -->
-                    <div class="col-lg-6 col-md-6 post-item isotope-item filter-web">
-                        <div class="post-card">
-                            <div class="post-image">
-                                <img src="assets/img/img_insta1.jpg" class="img-fluid" alt="" loading="lazy">
-                                <div class="post-overlay">
-                                    <div class="post-actions">
-                                        <a href="assets/img/img_insta1.jpg" class="glightbox preview-link"
-                                            data-gallery="post-gallery-web"><i class="bi bi-eye"></i></a>
+                <div id="carouselGallery" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+
+                        <!-- Slide 1 com 4 imagens -->
+                        <div class="carousel-item active">
+                            <div class="row g-4 isotope-container">
+                                <!-- Imagem 1 -->
+                                <div class="col-lg-6 col-md-6 post-item isotope-item filter-web">
+                                    <div class="post-card position-relative">
+                                        <a href="assets/img/galeria/img_insta1.jpg" class="stretched-link glightbox"
+                                            data-gallery="post-gallery-web"></a>
+
+                                        <div class="post-image">
+                                            <img src="assets/img/galeria/img_insta1.jpg" class="img-fluid" alt=""
+                                                loading="lazy">
+
+                                            <div class="post-overlay">
+                                                <div class="post-actions">
+                                                    <i class="bi bi-eye"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Imagem 2 -->
+                                <div class="col-lg-6 col-md-6 post-item isotope-item filter-web">
+                                    <div class="post-card position-relative">
+                                        <a href="assets/img/galeria/img_insta2.jpg" class="stretched-link glightbox"
+                                            data-gallery="post-gallery-web"></a>
+
+                                        <div class="post-image">
+                                            <img src="assets/img/galeria/img_insta2.jpg" class="img-fluid" alt=""
+                                                loading="lazy">
+
+                                            <div class="post-overlay">
+                                                <div class="post-actions">
+                                                    <i class="bi bi-eye"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Imagem 3 -->
+                                <div class="col-lg-6 col-md-6 post-item isotope-item filter-web">
+                                    <div class="post-card position-relative">
+                                        <a href="assets/img/galeria/img_insta3.jpg" class="stretched-link glightbox"
+                                            data-gallery="post-gallery-web"></a>
+
+                                        <div class="post-image">
+                                            <img src="assets/img/galeria/img_insta3.jpg" class="img-fluid" alt=""
+                                                loading="lazy">
+
+                                            <div class="post-overlay">
+                                                <div class="post-actions">
+                                                    <i class="bi bi-eye"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Imagem 4 -->
+                                <div class="col-lg-6 col-md-6 post-item isotope-item filter-web">
+                                    <div class="post-card position-relative">
+                                        <a href="assets/img/galeria/img_insta4.jpg" class="stretched-link glightbox"
+                                            data-gallery="post-gallery-web"></a>
+
+                                        <div class="post-image">
+                                            <img src="assets/img/galeria/img_insta4.jpg" class="img-fluid" alt=""
+                                                loading="lazy">
+
+                                            <div class="post-overlay">
+                                                <div class="post-actions">
+                                                    <i class="bi bi-eye"></i>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- Card Media -->
-                    <div class="col-lg-6 col-md-6 post-item isotope-item filter-graphics">
-                        <div class="post-card">
-                            <div class="post-image">
-                                <img src="assets/img/img_insta2.jpg" class="img-fluid" alt="" loading="lazy">
-                                <div class="post-overlay">
-                                    <div class="post-actions">
-                                        <a href="assets/img/img_insta2.jpg" class="glightbox preview-link"
-                                            data-gallery="post-gallery-graphics"><i class="bi bi-eye"></i></a>
+                        <div class="carousel-item active">
+                            <div class="row g-4 isotope-container">
+                                <!-- Imagem 1 -->
+                                <div class="col-lg-6 col-md-6 post-item isotope-item filter-web">
+                                    <div class="post-card position-relative">
+                                        <a href="assets/videos/HYBS - Tip Toe (Official Video).mp4"
+                                            class="stretched-link glightbox" data-gallery="post-gallery-web"
+                                            data-type="video"></a>
+
+                                        <div class="post-image">
+                                            <video class="img-fluid" autoplay muted loop playsinline>
+                                                <source src="assets/videos/HYBS - Tip Toe (Official Video).mp4"
+                                                    type="video/mp4">
+                                                Seu navegador não suporta vídeos HTML5.
+                                            </video>
+
+                                            <div class="post-overlay">
+                                                <div class="post-actions">
+                                                    <i class="bi bi-eye"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Imagem 2 -->
+                                <div class="col-lg-6 col-md-6 post-item isotope-item filter-web">
+                                    <div class="post-card position-relative">
+                                        <a href="assets/videos/HYBS - Tip Toe (Official Video).mp4"
+                                            class="stretched-link glightbox" data-gallery="post-gallery-web"
+                                            data-type="video"></a>
+
+                                        <div class="post-image">
+                                            <video class="img-fluid" autoplay muted loop playsinline>
+                                                <source src="assets/videos/HYBS - Tip Toe (Official Video).mp4"
+                                                    type="video/mp4">
+                                                Seu navegador não suporta vídeos HTML5.
+                                            </video>
+
+                                            <div class="post-overlay">
+                                                <div class="post-actions">
+                                                    <i class="bi bi-eye"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Imagem 3 -->
+                                <div class="col-lg-6 col-md-6 post-item isotope-item filter-web">
+                                    <div class="post-card position-relative">
+                                        <a href="assets/videos/HYBS - Tip Toe (Official Video).mp4"
+                                            class="stretched-link glightbox" data-gallery="post-gallery-web"
+                                            data-type="video"></a>
+
+                                        <div class="post-image">
+                                            <video class="img-fluid" autoplay muted loop playsinline>
+                                                <source src="assets/videos/HYBS - Tip Toe (Official Video).mp4"
+                                                    type="video/mp4">
+                                                Seu navegador não suporta vídeos HTML5.
+                                            </video>
+
+                                            <div class="post-overlay">
+                                                <div class="post-actions">
+                                                    <i class="bi bi-eye"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Imagem 4 -->
+                                <div class="col-lg-6 col-md-6 post-item isotope-item filter-web">
+                                    <div class="post-card position-relative">
+                                        <a href="assets/videos/HYBS - Tip Toe (Official Video).mp4"
+                                            class="stretched-link glightbox" data-gallery="post-gallery-web"
+                                            data-type="video"></a>
+
+                                        <div class="post-image">
+                                            <video class="img-fluid" autoplay muted loop playsinline>
+                                                <source src="assets/videos/HYBS - Tip Toe (Official Video).mp4"
+                                                    type="video/mp4">
+                                                Seu navegador não suporta vídeos HTML5.
+                                            </video>
+
+                                            <div class="post-overlay">
+                                                <div class="post-actions">
+                                                    <i class="bi bi-eye"></i>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- Card Media -->
-                    <div class="col-lg-6 col-md-6 post-item isotope-item filter-motion">
-                        <div class="post-card">
-                            <div class="post-image">
-                                <img src="assets/img/img_insta3.jpg" class="img-fluid" alt="" loading="lazy">
-                                <div class="post-overlay">
-                                    <div class="post-actions">
-                                        <a href="assets/img/img_insta3.jpg" class="glightbox preview-link"
-                                            data-gallery="post-gallery-motion"><i class="bi bi-eye"></i></a>
-                                    </div>
-                                </div>
+                        <!-- Caso tenha mais imagens, adicione outro carousel-item com 4 imagens -->
+                        <!--
+                        <div class="carousel-item">
+                            <div class="row g-4 isotope-container">
+                                ... outras 4 imagens ...
                             </div>
                         </div>
+                        -->
                     </div>
-                    <!-- Card Media -->
-                    <div class="col-lg-6 col-md-6 post-item isotope-item filter-brand">
-                        <div class="post-card">
-                            <div class="post-image">
-                                <img src="assets/img/img_insta4.jpg" class="img-fluid" alt="" loading="lazy">
-                                <div class="post-overlay">
-                                    <div class="post-actions">
-                                        <a href="assets/img/img_insta4.jpg" class="glightbox preview-link"
-                                            data-gallery="post-gallery-brand"><i class="bi bi-eye"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <!-- Botões de navegação -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselGallery"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselGallery"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Próximo</span>
+                    </button>
                 </div>
             </div>
         </div>
     </section><!-- /Gallery Section -->
     <!-- Section Newsletter -->
-    <section class="newsletter-section">
+    <section class="newsletter-section py-custom">
         <div class="container text-center">
             <h2 class="mb-3">Inscreva-se na nossa Newsletter</h2>
             <p class="mb-4">Receba atualizações e novidades diretamente no seu e-mail.</p>
-
-            <form id="emailForm" class="row justify-content-center g-2">
-                <div class="col-md-6 col-sm-8">
-                    <input type="email" class="form-control" id="emailInput" placeholder="Digite seu e-mail" required>
-                </div>
-                <div class="col-auto">
-                    <button type="submit" class="btn text-white" form="emailForm">Inscrever</button>
-                </div>
-            </form>
-            <p id="mensagem"></p>
+            <button type="button" class="btn btn-primarycolor h-auto px-4 py-2" data-bs-toggle="modal"
+                data-bs-target="#newsletterModal">
+                Receba novidades
+            </button>
         </div>
     </section><!-- /Newsletter Section -->
     <!-- Section Footer -->
@@ -621,15 +803,13 @@
             <div class="row gy-4">
                 <div class="col-lg-5 col-md-12 footer-about">
                     <a href="index.html" class="logo d-flex align-items-center">
-                        <img src="/assets/img/logocompleta.png" alt="Logo">
-                        <span class="sitename">LFTI</span>
+                        <img src="/assets/img/logo/logocompleta.png" alt="Logo">
+                        <span class="resum">LFTI</span>
                     </a>
                     <p>Um movimento criado por alunas e profissionais para
                         transformar o setor de tecnologia com mais diversidade,
                         inclusão e liderança feminina.</p>
                     <div class="social-links d-flex mt-4">
-                        <a href=""><i class="bi bi-twitter-x"></i></a>
-                        <a href=""><i class="bi bi-facebook"></i></a>
                         <a href=""><i class="bi bi-instagram"></i></a>
                         <a href=""><i class="bi bi-linkedin"></i></a>
                     </div>
@@ -666,8 +846,9 @@
         </div>
         <div class="container copyright text-center mt-4">
             <div class="credits">
-                Desenvolvido por <a href="https://github.com/SousaValentyna" target="_blank"><strong
-                        class="px-1 sitename color-primary">Valentyna </strong></a>© 2025
+                Desenvolvido por <a href="https://github.com/SousaValentyna" target="_blank"
+                    class="px-1 color-secundary">
+                    Valentyna</a>© 2025
             </div>
         </div>
     </footer><!-- /Footer Section -->
@@ -676,6 +857,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
     <!-- Main Custom JS -->
     <script src="js/main.js"></script>
@@ -683,6 +865,15 @@
     <!-- Seu código principal -->
     <script type="module" src="js/email.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+          duration: 600,        // duração da animação em ms
+          easing: 'ease-in-out', // tipo de easing
+          once: true,            // anima só uma vez (true) ou toda vez que aparecer (false)
+          mirror: false          // se deve animar ao voltar scroll
+        });
+      </script>
 </body>
 
 </html>

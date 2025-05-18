@@ -2,18 +2,14 @@
 /* VARIÁVEIS GLOBAIS   */
 /* =================== */
 :root {
-  /* Fontes padrão */
-  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Poppins", sans-serif;
-  --nav-font: "Raleway", sans-serif;
-
   /* Cores globais */
   --background-color: #ffffff;
-  --default-color: #1f0446;
+  --default-color: #26183b;
   --heading-color: #32353a;
   --accent-color: #8E59D9;
   --surface-color: #ffffff;
   --contrast-color: #ffffff;
+  --details-color: #C2FF73;
 
   /* Cores específicas para navegação */
   --nav-color: #3a3939;
@@ -75,8 +71,9 @@
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
+
 .bg-about {
-  /*background: url("/assets/img/backgraound1.png") no-repeat center center;*/
+
 }
 
 .about .content .who-we-are {
@@ -151,6 +148,28 @@
   border-radius: 10px;
 }
 
+.about .destaque-span {
+  background: linear-gradient(145deg, color-mix(in srgb, var(--accent-color), transparent 95%), var(--surface-color));
+  border: 2px solid color-mix(in srgb, var(--accent-color), transparent 85%);
+  border-radius: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: block;
+  margin-top: 20px;
+  line-height: 1.6;
+}
+
+.about .destaque-span:hover {
+  transform: translateX(10px);
+  box-shadow: -8px 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.about .hover-img:hover {
+  transform: translateX(10px);
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
 
 /*--------------------------------------------------------------
 # Selection Process Section
@@ -443,7 +462,7 @@
 }
 
 /* =================== */
-/* POSTS               */
+/* POSTS & Gallery     */
 /* =================== */
 .post .post-filters-container {
   margin-bottom: 40px;
@@ -589,6 +608,25 @@
   line-height: 1.6;
 }
 
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(68, 25, 111, 0.5);
+  /* cor de fundo para visibilidade */
+  border-radius: 50%;
+  padding: 10px;
+  height: 4rem;
+  width: 4rem;
+}
+
+/* Indicadores (bullets) visíveis e bem posicionados */
+.carousel-indicators [data-bs-target] {
+  background-color: #000;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+
 @media (max-width: 768px) {
   .post .post-filters li {
     font-size: 14px;
@@ -620,6 +658,10 @@
   color: var(--accent-color);
 }
 
+.color-secundary {
+  color: var(--details-color);
+}
+
 .btn-primarycolor {
   color: #fff;
   background-color: #8E59D9;
@@ -629,12 +671,16 @@
 .btn-primarycolor:hover {
   background-color: #733ebb;
   border-color: #733ebb;
+  color: white;
+  transform: translateY(5px);
+  transition: all 0.2s ease-in-out;
 }
 
 .btn-primarycolor:focus,
 .btn-primarycolor.focus {
   box-shadow: 0 0 0 0.2rem rgba(142, 89, 217, 0.5);
   border-color: #733ebb;
+  color: white;
 }
 
 .bg-color {
@@ -642,18 +688,32 @@
 }
 
 .py-custom {
-  padding-top: 8rem !important;
-  padding-bottom: 8rem !important;
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important;
 }
 
 .mb-custom {
-  margin-bottom: 6rem !important;
+  margin-bottom: 4rem !important;
+}
+
+.hover-img:hover {
+  transform: translateX(10px);
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+.content h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  padding-bottom: 6rem;
+  text-align: center;
 }
 
 /*-----------------------*/
 /*Newsletter -----------*/
 .newsletter-section {
-  background-color: #f9f9ff; /* tom claro combinando com o roxo */
+  background-color: #f9f9ff;
+  /* tom claro combinando com o roxo */
   padding: 4rem 0;
 }
 
@@ -716,7 +776,7 @@
 }
 
 .footer .footer-about .logo span {
-  color: var(--heading-color);
+  color: #fff;
   font-size: 30px;
   font-weight: 700;
   letter-spacing: 1px;
@@ -743,8 +803,8 @@
 }
 
 .footer .social-links a:hover {
-  color: var(--accent-color);
-  border-color: var(--accent-color);
+  color: var(--details-color);
+  border-color: var(--details-color);
 }
 
 .footer h4 {
@@ -787,7 +847,7 @@
 }
 
 .footer .footer-links ul a:hover {
-  color: var(--accent-color);
+  color: var(--details-color);
 }
 
 .footer .footer-contact p {
