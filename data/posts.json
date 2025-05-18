@@ -1,0 +1,21 @@
+[
+    {
+      "imagem": "assets/img/postagens/futuras-cientistas.png",
+      "linkImagem": "assets/img/postagens/futuras-cientistas.png",
+      "linkPost": "https://uvv.br/noticias/2024/09/liga-feminina-de-ti-e-aprovada-no-programa-futuras-cientistas-do-cnpq/",
+      "titulo": "Liga feminina de TI é aprovada no programa Futuras Cientistas do CNPq",
+      "descricao": "Vestibulum id ligula porta felis euismod semper at vulputate.",
+      "filtro": "filter-web",
+      "galeria": "post-gallery-web"
+    },
+    {
+      "imagem": "assets/img/postagens/liganoticiauvv.jpeg",
+      "linkImagem": "assets/img/postagens/liganoticiauvv.jpeg",
+      "linkPost": "https://uvv.br/noticias/2025/03/alunas-de-tecnologia-da-uvv-representaram-o-es-no-campus-mobile-em-sao-paulo/",
+      "titulo": "Alunas de tecnologia da UVV representaram o ES no Campus Mobile, em São Paulo",
+      "descricao": "Vestibulum id ligula porta felis euismod semper at vulputate.",
+      "filtro": "filter-graphics",
+      "galeria": "post-gallery-graphics"
+    }
+  ]
+  

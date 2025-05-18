@@ -1,0 +1,58 @@
+[
+  {
+    "nome": "Isabel Valentim",
+    "curso": "Ciência da Computação",
+    "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "imagem": "assets/img/integrantes/IsabelValentim.jpeg",
+    "linkedin": "https://www.linkedin.com/in/isabel-valentim-25b8581a2/",
+    "instagram": "https://www.instagram.com/liga_femininadeti"
+  },
+  {
+    "nome": "Maria Eduarda Fiorio",
+    "curso": "Ciência da Computação",
+    "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "imagem": "assets/img/integrantes/mariaFiorio.jpeg",
+    "linkedin": "https://www.linkedin.com/in/maria-fiorio-84764217b/",
+    "instagram": "https://www.instagram.com/liga_femininadeti"
+  },
+  {
+    "nome": "Luana Teixeira da Silva",
+    "curso": "Ciência da Computação",
+    "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "imagem": "assets/img/integrantes/luanaTexeira.jpeg",
+    "linkedin": "https://www.linkedin.com/in/luanatxds/",
+    "instagram": "https://www.instagram.com/liga_femininadeti"
+  },
+  {
+    "nome": "Suellen Miranda Amorim",
+    "curso": "Ciência da Computação",
+    "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "imagem": "assets/img/integrantes/suellen.jpeg",
+    "linkedin": "https://www.linkedin.com/in/suellenmiranda/",
+    "instagram": "https://www.instagram.com/liga_femininadeti"
+  },
+  {
+    "nome": "Lara Mendes Valin",
+    "curso": "Ciência da Computação",
+    "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "imagem": "assets/img/integrantes/laraMendes.jpeg",
+    "linkedin": "https://www.linkedin.com/in/lara-mendes-valin-492435151/",
+    "instagram": "https://www.instagram.com/liga_femininadeti"
+  },
+  {
+    "nome": "Marcela R dos Santos",
+    "curso": "Ciência da Computação",
+    "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "imagem": "assets/img/integrantes/MarcelaSantos.jpeg",
+    "linkedin": "https://www.linkedin.com/in/marcela-r-santos/",
+    "instagram": "https://www.instagram.com/liga_femininadeti"
+  },
+  {
+    "nome": "Nikelly S J Thomaz",
+    "curso": "Ciência da Computação",
+    "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "imagem": "assets/img/integrantes/Nikelly.jpeg",
+    "linkedin": "https://www.linkedin.com/in/nikelly-s-j-thomaz-935b2024a/",
+    "instagram": "https://www.instagram.com/liga_femininadeti"
+  }
+]
