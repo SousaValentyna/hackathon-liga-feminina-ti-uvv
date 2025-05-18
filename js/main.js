@@ -2,8 +2,19 @@ document.addEventListener("DOMContentLoaded", function () {
     fetch('data/integrantes.json')
       .then(response => response.json())
       .then(integrantes => {
-        const container = document.getElementById('posts-container');
+        // Seleciona o container usando a classe (ajuste conforme sua estrutura)
+        const container = document.querySelector('.row.integrantes-container');
   
+        // Verifica se o container foi encontrado
+        if (!container) {
+          console.error('Container dos integrantes não encontrado!');
+          return;
+        }
+  
+        // Limpa o conteúdo antigo, se houver
+        container.innerHTML = '';
+  
+        // Cria os cards dinamicamente
         integrantes.forEach(pessoa => {
           const div = document.createElement('div');
           div.className = 'col-md-6 col-lg-3';
