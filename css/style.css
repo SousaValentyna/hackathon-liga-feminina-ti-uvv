@@ -21,28 +21,10 @@
 }
 
 /* Reset */
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background: #fff;
-  color: #000;
-}
 
 a {
   text-decoration: none;
-}
-
-button, [type="button"], [type="submit"], [type="reset"] {
-  cursor: pointer;
-  background: none;
   border: none;
-  padding: 0;
 }
 
 /* =================== */
@@ -87,13 +69,35 @@ button, [type="button"], [type="submit"], [type="reset"] {
   filter: brightness(0) saturate(100%) invert(85%) sepia(21%) saturate(1082%) hue-rotate(34deg) brightness(101%) contrast(94%);
 }
 
+@media (max-width: 767.98px) {
+  #home {
+    padding-top: 6rem !important; /* ajuste conforme a altura do seu header */
+  }
+}
 
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
 
 .bg-about {
+  position: relative;
+  z-index: 1;
+  padding: 40px;
+  overflow: hidden;
+}
 
+.bg-about::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: url('/assets/img/ilustracoes/frame.png') center center no-repeat;
+  opacity: 0.5; /* só o fundo ficará transparente */
+  z-index: 0;
+}
+
+.bg-about> * {
+  position: relative;
+  z-index: 1;
 }
 
 .about .content .who-we-are {
@@ -194,6 +198,28 @@ button, [type="button"], [type="submit"], [type="reset"] {
 /*--------------------------------------------------------------
 # Selection Process Section
 --------------------------------------------------------------*/
+
+.bg-process {
+  position: relative;
+  z-index: 1;
+  padding: 40px;
+  overflow: hidden;
+}
+
+.bg-process::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: url('/assets/img/ilustracoes/frame.png') center center no-repeat;
+  opacity: 0.5; /* só o fundo ficará transparente */
+  z-index: 0;
+}
+
+.bg-process> * {
+  position: relative;
+  z-index: 1;
+}
+
 .process-selection .process-container {
   max-width: 800px;
   margin: 0 auto;
@@ -359,9 +385,78 @@ button, [type="button"], [type="submit"], [type="reset"] {
   }
 }
 
+/* Estilos específicos para telas de até 512px de largura */
+@media (max-width: 512px) {
+
+  .nav .button {
+    display: flex; 
+    justify-content: center;
+  }
+
+  .process-selection .process-container {
+    padding: 1rem 0;
+  }
+
+  .process-selection .process-item {
+    padding-bottom: 2rem;
+  }
+
+  .process-selection .process-item .content {
+    border-width: 1px;
+  }
+
+  .process-selection .process-item .content:hover {
+    transform: translateY(-5px);
+  }
+
+  .process-selection .process-item .step-number {
+    font-size: 2.5rem; /* levemente menor para telas muito estreitas */
+    left: 50%;
+    top: -1.25rem;
+    transform: translateX(-50%);
+  }
+
+  .process-selection .process-item .step-number:hover {
+    transform: translateX(-50%);
+  }
+
+  .process-selection .process-item .card-body {
+    padding: 1.5rem 1rem 1rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.75rem;
+  }
+
+  .process-selection .process-item .step-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+  }
+
+  .process-selection .process-item .step-icon i {
+    font-size: 1.5rem;
+  }
+
+  .process-selection .process-item .step-content h3 {
+    font-size: 1.1rem;
+  }
+
+  .process-selection .process-item .arrow {
+    height: 50px;
+    margin: 0.5rem 0;
+  }
+}
+
+
 /* =================== */
 /* Member Section      */
 /* =================== */
+
+.member {
+  background-color: #f9f9ff;
+}
+
 .member .member-card {
   border-radius: 12px;
   overflow: hidden;
