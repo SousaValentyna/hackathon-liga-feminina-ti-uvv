@@ -140,7 +140,7 @@
         </div>
     </section>
     <!-- About Section -->
-    <section id="historia" "bg-about py-custom">
+    <section id="historia" class="bg-about py-custom">
         <!-- Nossa História -->
         <section id="about-story" class="about section pt-4">
             <div class="container content">
@@ -635,6 +635,12 @@
             mirror: false
         });
     </script>
+    <script>
+        const scrollSpy = new bootstrap.ScrollSpy(document.body, {
+          target: '.navbar',
+          offset: 100 // Ajuste conforme a altura da sua navbar
+        });
+      </script>      
 </body>
 
 </html>

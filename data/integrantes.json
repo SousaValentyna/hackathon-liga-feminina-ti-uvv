@@ -54,5 +54,13 @@
     "imagem": "assets/img/integrantes/Nikelly.jpeg",
     "linkedin": "https://www.linkedin.com/in/nikelly-s-j-thomaz-935b2024a/",
     "instagram": "https://www.instagram.com/liga_femininadeti"
+  },
+  {
+    "nome": "Isabel Valentim",
+    "curso": "Ciência da Computação",
+    "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "imagem": "assets/img/integrantes/IsabelValentim.jpeg",
+    "linkedin": "https://www.linkedin.com/in/isabel-valentim-25b8581a2/",
+    "instagram": "https://www.instagram.com/liga_femininadeti"
   }
 ]
