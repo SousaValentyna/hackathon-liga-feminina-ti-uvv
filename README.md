@@ -146,11 +146,10 @@ function sendEmail() {
 
 ![Atualizacao Dinamica](./assets/screenshots/atualizacaodinamica.png)
 
-#### Site Responsivo
+📱 Design Responsivo
+Veja como o site se adapta perfeitamente a qualquer dispositivo, incluindo celulares:
 
-![Responsivo 1](./assets/screenshots/siteresponsivo1.jpeg)
-![Responsivo 2](./assets/screenshots/siteresponsivo2.jpeg)
-![E-mail Responsivo](./assets/screenshots/emailresponsivo.jpeg)
+<h4>💡 Versão Mobile</h4> <p> <img src="./assets/screenshots/siteresponsivo1.jpeg" width="200" /> <img src="./assets/screenshots/siteresponsivo2.jpeg" width="200" /> <img src="./assets/screenshots/emailresponsivo.jpeg" width="200" /> </p>
 
 #### Protótipo Figma
 
