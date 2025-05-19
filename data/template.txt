@@ -1,0 +1,41 @@
+<table cellpadding="0" cellspacing="0" border="0" width="100%" style="font-family: 'Courier New', Courier, monospace; background-color: #f9f9f9; padding: 10px;">
+  <tr>
+    <td align="center">
+      <table cellpadding="0" cellspacing="0" border="0" width="100%" style="max-width: 600px; background-color: #ffffff; border-radius: 8px; border: 1px solid #d9a8ff; box-shadow: 0 0 12px #e0b3ff; overflow: hidden;">
+        <tr>
+          <td style="padding: 10px;">
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td style="width: 12px; height: 12px; background-color: #58209a; border-radius: 50%; display: inline-block; margin-right: 6px;"></td>
+                <td style="width: 12px; height: 12px; background-color: #8E59D9; border-radius: 50%; display: inline-block; margin-right: 6px;"></td>
+                <td style="width: 12px; height: 12px; background-color: #C2FF73; border-radius: 50%; display: inline-block;"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td style="height: 2px; background-color: #d9a8ff;"></td>
+        </tr>
+        <tr>
+          <td style="padding: 20px; font-size: 14px; color: #1f1f1f;">
+            <h2 style="margin: 0; margin-bottom: 12px; color: #58209a; font-size: 18px;">Liga Feminina de TI</h2>
+            <p style="margin: 0; font-weight: bold; color: #8E59D9;">$ Notificação Automática</p>
+            <p style="margin-top: 18px; margin-bottom: 0;">Olá,</p>
+            <p style="margin-top: 8px; margin-bottom: 0;">{{message}}</p>
+            <p style="margin-top: 18px; font-weight: bold; color: #58209a;">Informações:</p>
+            <ul style="list-style: none; padding-left: 0; margin: 0;">
+              <li style="margin-bottom: 4px;">- E-mail: <span style="color: #3b82f6; font-weight: bold;">{{email}}</span></li>
+              <li>- Data/Hora: <span style="color: #3b82f6; font-weight: bold;">{{time}}</span></li>
+            </ul>
+            <p style="margin-top: 18px; font-weight: bold; color: #58209a;">Comando sugerido:</p>
+            <div style="background-color: #2d2d2d; color: #ffffff; padding: 12px; border-radius: 6px; font-size: 13px; border: 1px solid #8E59D9; overflow-x: auto;">
+              $ acessar <a href="https://www.instagram.com/liga_femininadeti/" style="text-decoration: underline; color: #C2FF73;" target="_blank">instagram da liga</a>
+            </div>
+            <p style="margin-top: 20px; color: #666;">-- Este é um e-mail automático. Não responda. --</p>
+            <p style="margin: 0; color: #666;">-- Atenciosamente, -- <br>-- Equipe Liga Feminina de TI</p>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
