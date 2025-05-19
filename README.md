@@ -134,6 +134,14 @@ function sendEmail() {
 
 ---
 
+## 🌐 Acesse o Site Online
+
+Veja o site oficial da **Liga Feminina de TI - UVV** ao vivo, diretamente no seu navegador:
+
+[🔗 Abrir site no GitHub Pages](https://sousavalentyna.github.io/hackathon-liga-feminina-ti-uvv/)
+
+---
+
 ## ✅ Funcionalidades
 
 ### Requisitos Atendidos:
@@ -143,6 +151,7 @@ function sendEmail() {
 * 🟢 Cadastro de e-mails com validação;
 * 🟢 Página dedicada ao processo seletivo;
 * 🟢 Galeria de imagens e vídeos.
+* 🟢 Site hospedado no GitHub Pages.
 
 ### Funcionalidades Extras:
 
@@ -207,12 +216,15 @@ Participar do Hackathon foi uma experiência transformadora!
 * Desenvolvi o design no Figma;
 * Codifiquei o site com HTML, CSS e JS;
 * Integrei Firebase e EmailJS;
+* Adicionei atualização dinâmica de integrantes e posts.
 * Garanti a responsividade;
+* Hospedei o site no GitHub Pages.
 * Cumpri todos os requisitos do edital.
 
 ### Principais Desafios:
 
-* Aprender a configurar o Firebase;
+* Desenvolver o site completo com foco em escalabilidade e garantindo qualidade na entrega.
+* Aprender a configurar o Firebase, já que o GitHub Pages não suporta back-end.
 * Compreender o EmailJS e seus templates;
 * Ajustar o design para diferentes dispositivos;
 * Gerenciar o tempo com foco e organização.
