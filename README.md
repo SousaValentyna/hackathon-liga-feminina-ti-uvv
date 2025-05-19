@@ -230,7 +230,7 @@ Participar do Hackathon foi uma experiência transformadora!
 <table align="center">
   <tr>
     <td align="center">
-      <a href="www.linkedin.com/in/valentynasousa" title="Perfil de Valentyna de Sousa">
+      <a href="https://www.linkedin.com/in/valentynasousa/" title="Perfil de Valentyna de Sousa">
         <img src="https://media.licdn.com/dms/image/v2/D4D03AQFd5J2ouBZK_Q/profile-displayphoto-shrink_200_200/B4DZRSFS0zGkAc-/0/1736543907561?e=1753315200&v=beta&t=y1piWbaFMuqL6gNLzSg1fgWpgpp1-EcYYBQvLwFfghc" width="100px;" alt="Foto de Valentyna no LinkedIn"/><br>
         <sub><b>Valentyna de Sousa</b></sub>
       </a>
