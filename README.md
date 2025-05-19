@@ -1,17 +1,12 @@
-````markdown
-# 💻 Site Oficial da Liga Feminina de TI - UVV
+💻 Site Oficial da Liga Feminina de TI - UVV
+Olá! Sou a criadora deste projeto, desenvolvido com muito carinho durante o 1º Hackathon da Liga Feminina de TI da Universidade de Vila Velha (UVV). A proposta surgiu da vontade de criar o site oficial da nossa Liga — um espaço que refletisse nossa identidade, fosse funcional, acessível e totalmente responsivo.
 
-Oi! Eu sou a pessoa por trás deste projeto, criado com muito carinho durante o **1º Hackathon da Liga Feminina de TI da Universidade de Vila Velha**. A ideia nasceu da vontade de construir o site oficial da nossa Liga — um espaço que seja **funcional, acessível e responsivo**, e que represente toda a força da nossa identidade e valores.
+Este site vai além de uma simples página na web. Ele representa um compromisso com a valorização das mulheres na tecnologia. Ainda somos menos de 20% nas vagas da área, e esta plataforma é um passo concreto para mudar esse cenário — incentivando o protagonismo feminino, a troca de conhecimentos e a aplicação prática do que aprendemos juntas.
 
-Mais do que uma simples página, este projeto representa um compromisso real: o de fortalecer e dar voz às mulheres na tecnologia. Afinal, ainda somos menos de 20% nas vagas da área — e essa plataforma é um passo para mudar essa realidade, incentivando o protagonismo, o apoio mútuo e a aplicação prática do que aprendemos.
+A Liga Feminina de TI é composta por mulheres incríveis — estudantes e profissionais — que acreditam no poder da prática: mentorias, treinamentos, projetos e pesquisas. Nosso objetivo é formar lideranças femininas e promover a diversidade na tecnologia.
 
-A **Liga Feminina de TI** é formada por mulheres incríveis, estudantes e profissionais, que acreditam no poder da capacitação prática — mentorias, treinamentos, projetos e pesquisas — para criar **lideranças femininas** e trazer mais diversidade para o setor tech.
-
----
-
-## 📦 Como Rodar o Projeto Localmente
-
-Quer testar o site aí no seu computador? É super simples, só seguir os passos abaixo:
+📦 Como Rodar o Projeto Localmente
+Quer testar o site aí no seu computador? É super simples! Basta seguir os passos abaixo:
 
 ### 1. 🔁 Clone o Repositório
 
@@ -81,25 +76,27 @@ function sendEmail() {
 ### Página Inicial
 
 ![Página Inicial](./assets/screenshots/home1.png)
-![Informações Sobre a Liga](./assets/screenshots/historia1.png)
-![Informações Sobre a Liga](./assets/screenshots/historia2.png)
+
+### Sobre a Liga
+![Informações Sobre a Liga](./assets/screenshots/historia1.png)<br>
+![Informações Sobre a Liga](./assets/screenshots/historia2.png)<br>
 ![Informações Sobre a Liga](./assets/screenshots/historia3.png)
-
-### Painel de Membros
-
-![Painel de Membros](./assets/screenshots/integrantes.png)
-
-### Cadastro de E-mail
-
-![Cadastro de E-mail](./assets/screenshots/footer.png)
 
 ### Processo Seletivo
 
 ![Processo Seletivo](./assets/screenshots/processo.png)
 
+### Painel de Membros
+
+![Painel de Membros](./assets/screenshots/integrantes.png)
+
 ### Galeria de Fotos e Vídeos
 
 ![Galeria](./assets/screenshots/galeria.png)
+
+### Cadastro de E-mail
+
+![Cadastro de E-mail](./assets/screenshots/footer.png)
 
 ---
 
@@ -146,10 +143,10 @@ function sendEmail() {
 
 ![Atualizacao Dinamica](./assets/screenshots/atualizacaodinamica.png)
 
-📱 Design Responsivo
+#### Design Responsivo
 Veja como o site se adapta perfeitamente a qualquer dispositivo, incluindo celulares:
 
-<h4>💡 Versão Mobile</h4> <p> <img src="./assets/screenshots/siteresponsivo1.jpeg" width="200" /> <img src="./assets/screenshots/siteresponsivo2.jpeg" width="200" /> <img src="./assets/screenshots/emailresponsivo.jpeg" width="200" /> </p>
+<h4>💡 Versão Mobile</h4> <p> <img src="./assets/screenshots/siteresponsivo1.jpeg" width="200" /> <img src="./assets/screenshots/siteresponsivo2.jpeg" width="200" /> <img src="./assets/screenshots/siteresponsivo3.jpeg.jpeg" width="200" /> <img src="./assets/screenshots/emailresponsivo.jpeg" width="200" /> </p>
 
 #### Protótipo Figma
 
