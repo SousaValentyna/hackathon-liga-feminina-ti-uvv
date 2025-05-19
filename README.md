@@ -122,7 +122,15 @@ function sendEmail() {
 
 ## 🎥 Vídeo Demonstrativo
 
-📽️ [Assista ao vídeo no YouTube](https://youtu.be/VNYOBA_8oUQ)
+<div align="center">
+
+[![Assista ao vídeo no YouTube](https://img.youtube.com/vi/VNYOBA_8oUQ/hqdefault.jpg)](https://youtu.be/VNYOBA_8oUQ)
+
+<br/>
+
+🎬 **Clique na imagem para assistir ao vídeo!**
+
+</div>
 
 ---
 
@@ -219,4 +227,4 @@ Participar do Hackathon foi uma experiência transformadora!
 
 ## 🔗 Contato
 
-[![LinkedIn](https://img.shields.io/badge/-Valentyna%20de%20Sousa-0077B5?style=flat-square\&logo=Linkedin\&logoColor=white)](www.linkedin.com/in/valentynasousa)
+[![LinkedIn](https://www.linkedin.com/in/valentynasousa/)]
