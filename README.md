@@ -1,38 +1,56 @@
-💻 Site Oficial da Liga Feminina de TI - UVV
-Olá! Sou a criadora deste projeto, desenvolvido com muito carinho durante o 1º Hackathon da Liga Feminina de TI da Universidade de Vila Velha (UVV). A proposta surgiu da vontade de criar o site oficial da nossa Liga — um espaço que refletisse nossa identidade, fosse funcional, acessível e totalmente responsivo.
+# 💻 Site Oficial da Liga Feminina de TI - UVV
 
-Este site vai além de uma simples página na web. Ele representa um compromisso com a valorização das mulheres na tecnologia. Ainda somos menos de 20% nas vagas da área, e esta plataforma é um passo concreto para mudar esse cenário — incentivando o protagonismo feminino, a troca de conhecimentos e a aplicação prática do que aprendemos juntas.
+Bem-vindo(a) ao repositório do **site oficial da Liga Feminina de TI da Universidade de Vila Velha (UVV)**!
+Este projeto foi desenvolvido com muito carinho durante o **1º Hackathon da Liga Feminina de TI**, com o propósito de criar uma plataforma digital que represente nossa identidade, fortaleça nossa comunidade e valorize a presença feminina na tecnologia.
 
-A Liga Feminina de TI é composta por mulheres incríveis — estudantes e profissionais — que acreditam no poder da prática: mentorias, treinamentos, projetos e pesquisas. Nosso objetivo é formar lideranças femininas e promover a diversidade na tecnologia.
+> **"Este site é mais do que código — é um passo concreto rumo à equidade de gênero na TI."**
 
-📦 Como Rodar o Projeto Localmente
-Quer testar o site aí no seu computador? É super simples! Basta seguir os passos abaixo:
+---
 
-### 1. 🔁 Clone o Repositório
+## ✨ Sobre o Projeto
+
+A **Liga Feminina de TI** é composta por estudantes e profissionais que acreditam no poder da prática: mentorias, treinamentos, projetos e pesquisas. A proposta do site é refletir essa missão, proporcionando:
+
+* Acesso às informações da Liga;
+* Visibilidade para integrantes e iniciativas;
+* Cadastro de e-mails para manter o contato com interessadas;
+* Um design acessível e responsivo.
+
+Atualmente, mulheres representam menos de 20% do setor de TI. Esta plataforma é um esforço para mudar esse cenário.
+
+---
+
+## 📦 Como Rodar o Projeto Localmente
+
+### 1. Clone o Repositório
 
 ```bash
 git clone https://github.com/SousaValentyna/hackathon-liga-feminina-ti-uvv.git
 cd hackathon-liga-feminina-ti-uvv
-````
+```
 
-### 2. 📁 Instale as Dependências
+### 2. Instale as Dependências
 
-Este projeto usa apenas HTML, CSS e JavaScript puro. Então, não é necessário instalar pacotes via npm ou yarn.
+Este projeto utiliza apenas **HTML, CSS e JavaScript puro**, portanto **não é necessário instalar pacotes** com npm ou yarn.
 
-> ⚠️ Para o cadastro de e-mails funcionar, será necessário configurar o **Firebase** e o **EmailJS** (te explico abaixo).
+> ⚠️ Para o envio de e-mails funcionar corretamente, será necessário configurar o **Firebase** e o **EmailJS**.
 
-### 3. 🔥 Configuração do Firebase
+---
+
+## 🔥 Configurações Necessárias
+
+### Firebase
 
 1. Acesse o [Firebase Console](https://console.firebase.google.com/).
-2. Crie um novo projeto (ou utilize um existente).
-3. Vá em **Firestore Database** e crie um banco de dados.
-4. Nas configurações do projeto, registre o app como "Web App" e copie as configurações (apiKey, authDomain, etc).
-5. No seu projeto, cole essas informações no arquivo de configuração (por exemplo, em `email.js`):
+2. Crie um novo projeto.
+3. Vá em **Firestore Database** e crie um banco.
+4. Registre um app Web e copie as configurações.
+5. Substitua os valores no arquivo `email.js`:
 
 ```js
 const firebaseConfig = {
   apiKey: "SUA_API_KEY",
-  authDomain: "SEU_DOMÍNIO.firebaseapp.com",
+  authDomain: "SEU_DOMINIO.firebaseapp.com",
   projectId: "SEU_PROJECT_ID",
   storageBucket: "SEU_BUCKET.appspot.com",
   messagingSenderId: "SEU_SENDER_ID",
@@ -40,13 +58,12 @@ const firebaseConfig = {
 };
 ```
 
-### 4. 📧 Configuração do EmailJS
+### EmailJS
 
-1. Crie uma conta gratuita em [EmailJS](https://www.emailjs.com/).
-2. Configure um serviço de e-mail (como Gmail).
-3. Use o template pronto disponível no arquivo `template.txt` (pasta `data`).
-4. Copie o **Service ID**, **Template ID** e **Public Key**.
-5. No `email.js`, inicialize o serviço assim:
+1. Crie uma conta em [EmailJS](https://www.emailjs.com/).
+2. Configure um serviço (ex: Gmail).
+3. Use o modelo `template.txt` disponível na pasta `data`.
+4. Adicione os dados no `email.js`:
 
 ```js
 emailjs.init("SUA_PUBLIC_KEY");
@@ -64,23 +81,26 @@ function sendEmail() {
 }
 ```
 
-### 5. ▶️ Executando o Projeto
+---
 
-* Você pode abrir o `index.html` diretamente no navegador (duplo clique);
-* Ou usar a extensão **Live Server** no VS Code para uma experiência mais fluida.
+## ▶️ Executando o Projeto
+
+* Basta abrir o arquivo `index.html` diretamente no navegador;
+* Ou, para uma melhor experiência, use a extensão **Live Server** no VS Code.
 
 ---
 
-## 🖼️ Dê uma olhada no site!
+## 🖼️ Prévia do Projeto
 
 ### Página Inicial
 
 ![Página Inicial](./assets/screenshots/home1.png)
 
 ### Sobre a Liga
-![Informações Sobre a Liga](./assets/screenshots/historia1.png)<br>
-![Informações Sobre a Liga](./assets/screenshots/historia2.png)<br>
-![Informações Sobre a Liga](./assets/screenshots/historia3.png)
+
+![Sobre a Liga](./assets/screenshots/historia1.png)
+![Sobre a Liga](./assets/screenshots/historia2.png)
+![Sobre a Liga](./assets/screenshots/historia3.png)
 
 ### Processo Seletivo
 
@@ -90,21 +110,19 @@ function sendEmail() {
 
 ![Painel de Membros](./assets/screenshots/integrantes.png)
 
-### Galeria de Fotos e Vídeos
+### Galeria
 
 ![Galeria](./assets/screenshots/galeria.png)
 
-### Cadastro de E-mail
+### Cadastro de E-mails
 
-![Cadastro de E-mail](./assets/screenshots/footer.png)
+![Footer](./assets/screenshots/footer.png)
 
 ---
 
 ## 🎥 Vídeo Demonstrativo
 
-> (Adicione aqui o link do vídeo demonstrativo no YouTube ou outra plataforma, como o Loom.)
-
-[🔗 Assistir ao vídeo](#)
+📽️ [Assista ao vídeo no YouTube](https://youtu.be/VNYOBA_8oUQ)
 
 ---
 
@@ -112,87 +130,93 @@ function sendEmail() {
 
 ### Requisitos Atendidos:
 
-* 🟢 **R1 – Informações gerais da Liga:** Missão, visão, objetivos e história com identidade visual.
-* 🟢 **R2 – Painel de membros:** Lista dinâmica, alimentada via JSON.
-* 🟢 **R3 – Cadastro de e-mails:** Validação, confirmação visual e armazenamento seguro via Firebase.
-* 🟢 **R4 – Página do processo seletivo:** Guia completo para novos participantes.
-* 🟢 **R5 – Galeria de fotos e vídeos:** Layout flexível e responsivo.
+* 🟢 Informações institucionais (Missão, Visão, História);
+* 🟢 Painel de membros;
+* 🟢 Cadastro de e-mails com validação;
+* 🟢 Página dedicada ao processo seletivo;
+* 🟢 Galeria de imagens e vídeos.
 
 ### Funcionalidades Extras:
 
-* 💬 Painel de postagens para notícias recentes.
+* 💬 Painel de postagens para atualizações;
 * 💾 Armazenamento seguro de e-mails no Firebase Firestore.
-* 📧 Envio automático de e-mails com EmailJS.
+* 📧 Integração com EmailJS para envio de mensagens;
 * 📝 Conteúdo dinâmico com arquivos JSON + JavaScript.
-* 📱 Design responsivo para todas as telas.
-* 🎨 Protótipo visual desenvolvido no Figma.
+* 📱 Design totalmente responsivo;
+* 🎨 Protótipo no Figma.
+
+---
+
+## 📷 Extras Visuais
 
 #### Painel de Posts
 
-![Painel de Posts](./assets/screenshots/posts.png)
+![Posts](./assets/screenshots/posts.png)
 
-#### Firebase Firestore
+#### Firestore
 
-![Banco de Dados Firebase](./assets/screenshots/firebase.png)
+![Firestore](./assets/screenshots/firebase.png)
 
-#### EmailJS
+#### Template EmailJS
 
-![Template emailJS](./assets/screenshots/templateemail.png)
+![Template](./assets/screenshots/templateemail.png)
 
 #### Conteúdo Dinâmico
 
-![Atualizacao Dinamica](./assets/screenshots/atualizacaodinamica.png)
+![Dinâmico](./assets/screenshots/atualizacaodinamica.png)
 
-#### Design Responsivo
-Veja como o site se adapta perfeitamente a qualquer dispositivo, incluindo celulares:
+#### Responsividade (Mobile)
 
-<h4>💡 Versão Mobile</h4> <p> <img src="./assets/screenshots/siteresponsivo1.jpeg" width="200" /> <img src="./assets/screenshots/siteresponsivo2.jpeg" width="200" /> <img src="./assets/screenshots/siteresponsivo3.jpeg.jpeg" width="200" /> <img src="./assets/screenshots/emailresponsivo.jpeg" width="200" /> </p>
+<p>
+  <img src="./assets/screenshots/siteresponsivo1.jpeg" width="200" />
+  <img src="./assets/screenshots/siteresponsivo2.jpeg" width="200" />
+  <img src="./assets/screenshots/siteresponsivo3.jpeg" width="200" />
+  <img src="./assets/screenshots/emailresponsivo.jpeg" width="200" />
+</p>
 
 #### Protótipo Figma
 
-🔗 [Visualizar Protótipo no Figma](https://www.figma.com/design/AJQLE5CbRNTKe5caOjU7LA/prototipo-liga-feminina-ti-uvv?node-id=0-1&p=f&t=wQ3UcY8n6wcxVbFi-0)
+🔗 [Ver no Figma](https://www.figma.com/design/AJQLE5CbRNTKe5caOjU7LA/prototipo-liga-feminina-ti-uvv?node-id=0-1&p=f&t=wQ3UcY8n6wcxVbFi-0)
 
 ---
 
 ## 🛠️ Tecnologias Utilizadas
 
-* **HTML5, CSS3 e JavaScript**: Desenvolvimento do site com foco em acessibilidade e responsividade.
-* **Bootstrap**: Para componentes e layout responsivo.
-* **Firebase Firestore**: Banco de dados em nuvem para armazenar e-mails.
-* **EmailJS**: Envio de e-mails diretamente do frontend.
-* **Figma**: Protótipos e identidade visual.
+* **HTML5, CSS3 e JavaScript**
+* **Bootstrap** – layout e componentes responsivos
+* **Firebase Firestore** – banco de dados em nuvem
+* **EmailJS** – envio de e-mails no frontend
+* **Figma** – design e prototipação
 
 ---
 
-## ✨ Minha Jornada no Hackathon
+## 🚀 Minha Jornada no Hackathon
 
-Participar do Hackathon da Liga Feminina de TI foi mais que um desafio técnico — foi uma transformação pessoal!
+Participar do Hackathon foi uma experiência transformadora!
 
-### O que eu fiz:
+### O que fiz:
 
-* Estudei o edital com atenção para garantir todos os requisitos.
-* Criei o design no Figma, com foco em representatividade.
-* Codifiquei com HTML, CSS e JS puro, com dados dinâmicos.
-* Implementei Firebase e EmailJS para uma solução mais completa.
-* Testei o site em diferentes dispositivos e tamanhos de tela.
+* Desenvolvi o design no Figma;
+* Codifiquei o site com HTML, CSS e JS;
+* Integrei Firebase e EmailJS;
+* Garanti a responsividade;
+* Cumpri todos os requisitos do edital.
 
-### Desafios Enfrentados:
+### Principais Desafios:
 
-* Configuração inicial do Firebase exigiu pesquisa e paciência.
-* Integração com EmailJS foi uma descoberta sobre templates e variáveis dinâmicas.
-* Tornar o design responsivo exigiu muitos testes e ajustes.
-* Trabalhar com prazos curtos desenvolveu meu foco e organização.
+* Aprender a configurar o Firebase;
+* Compreender o EmailJS e seus templates;
+* Ajustar o design para diferentes dispositivos;
+* Gerenciar o tempo com foco e organização.
 
 ---
 
 ## 💬 Conclusão
 
-> **Este projeto não é só código — é uma declaração de que mulheres na tecnologia têm talento, criatividade e muito a contribuir. Espero que você sinta essa energia ao visitar o site. 💜**
+> "Este projeto é uma declaração de que mulheres na tecnologia têm talento, criatividade e voz. Espero que você sinta essa energia ao navegar pelo site. 💜"
 
 ---
 
-## 🔗 Me encontre no LinkedIn
+## 🔗 Contato
 
-[![LinkedIn](https://img.shields.io/badge/-Valentyna%20de%20Sousa-0077B5?style=flat-square\&logo=Linkedin\&logoColor=white\&link=https://www.linkedin.com/in/valentyna-sousa/)](https://www.linkedin.com/in/valentyna-sousa/)
-
-```
+[![LinkedIn](https://img.shields.io/badge/-Valentyna%20de%20Sousa-0077B5?style=flat-square\&logo=Linkedin\&logoColor=white)](www.linkedin.com/in/valentynasousa)
